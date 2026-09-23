@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="description"
+    content="Marie Claire 10/2026 — Park Si Woo. Phỏng vấn về diễn xuất, thử thách, INUFF và hành trình theo đuổi ước mơ."
+  />
+
+  <title>Park Si Woo — Marie Claire 10/2026</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      /*
+        ============================================
+        THAY LINK ẢNH PARK SI WOO Ở ĐÂY
+        ============================================
+
+        Nên dùng link ảnh trực tiếp dạng:
+        https://domain.com/image.jpg
+
+        Không nên dùng link tới trang chứa ảnh.
+      */
+
+      --hero-image:
+        url("https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=2000&q=90");
+
+      --portrait-1:
+        url("https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1600&q=90");
+
+      --portrait-2:
+        url("https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1600&q=90");
+
+      --portrait-3:
+        url("https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=1600&q=90");
+
+      --bg: #f4f1eb;
+      --paper: #faf8f4;
+      --text: #171717;
+      --muted: #75716a;
+      --line: #d7d2c9;
+      --accent: #9d1f26;
+
+      --serif: "Playfair Display", Georgia, serif;
+      --sans: "DM Sans", Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      line-height: 1.8;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    ::selection {
+      background: var(--text);
+      color: var(--paper);
+    }
+
+    /* =========================================
+       HEADER
+    ========================================= */
+
+    .topbar {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 26px 5vw;
+
+      color: #fff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.32);
+    }
+
+    .brand {
+      font-family: var(--serif);
+      font-size: clamp(1.2rem, 2vw, 1.8rem);
+      font-weight: 600;
+      letter-spacing: -0.03em;
+    }
+
+    .issue {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-weight: 500;
+    }
+
+    /* =========================================
+       HERO
+    ========================================= */
+
+    .hero {
+      position: relative;
+
+      min-height: 100vh;
+
+      background:
+        linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.1) 0%,
+          rgba(0, 0, 0, 0.04) 38%,
+          rgba(0, 0, 0, 0.66) 100%
+        ),
+        var(--hero-image);
+
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+
+      display: flex;
+      align-items: flex-end;
+
+      color: white;
+    }
+
+    .hero-content {
+      width: 100%;
+      padding: 150px 5vw 65px;
+    }
+
+    .hero-kicker {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+
+      margin-bottom: 14px;
+
+      text-transform: uppercase;
+      font-size: 0.72rem;
+      letter-spacing: 0.19em;
+    }
+
+    .hero-kicker::before {
+      content: "";
+      width: 35px;
+      height: 1px;
+      background: white;
+    }
+
+    .hero h1 {
+      font-family: var(--serif);
+      font-weight: 500;
+      line-height: 0.88;
+
+      font-size: clamp(4.2rem, 12vw, 11rem);
+      letter-spacing: -0.065em;
+
+      max-width: 1100px;
+    }
+
+    .hero h1 em {
+      font-weight: 500;
+      opacity: 0.85;
+    }
+
+    .hero-bottom {
+      margin-top: 40px;
+
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+
+      border-top: 1px solid rgba(255, 255, 255, 0.45);
+      padding-top: 18px;
+
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.11em;
+    }
+
+    /* =========================================
+       INTRO
+    ========================================= */
+
+    main {
+      overflow: hidden;
+    }
+
+    .intro {
+      max-width: 1260px;
+      margin: auto;
+
+      padding: 110px 5vw 120px;
+
+      display: grid;
+      grid-template-columns: 0.8fr 2fr;
+      gap: 8vw;
+    }
+
+    .intro-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.17em;
+      text-transform: uppercase;
+      color: var(--muted);
+
+      padding-top: 14px;
+    }
+
+    .intro-text {
+      font-family: var(--serif);
+      font-size: clamp(1.9rem, 3.5vw, 3.7rem);
+      line-height: 1.2;
+      letter-spacing: -0.035em;
+    }
+
+    .intro-text span {
+      color: var(--accent);
+    }
+
+    /* =========================================
+       ARTICLE
+    ========================================= */
+
+    .article {
+      width: min(100% - 40px, 780px);
+      margin: auto;
+    }
+
+    .qa {
+      margin-bottom: 78px;
+    }
+
+    .question {
+      font-family: var(--serif);
+      font-weight: 600;
+
+      font-size: clamp(1.35rem, 2.3vw, 2rem);
+      line-height: 1.45;
+
+      margin-bottom: 26px;
+    }
+
+    .question::before {
+      content: "Q";
+      color: var(--accent);
+
+      font-family: var(--sans);
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+
+      display: block;
+
+      margin-bottom: 10px;
+    }
+
+    .answer {
+      color: #373531;
+      font-weight: 300;
+      font-size: 1.04rem;
+      line-height: 1.95;
+    }
+
+    .answer p + p {
+      margin-top: 18px;
+    }
+
+    /* =========================================
+       FULL WIDTH IMAGES
+    ========================================= */
+
+    .editorial-image {
+      width: min(100% - 60px, 1360px);
+      height: min(78vh, 900px);
+
+      margin: 130px auto;
+
+      background-size: cover;
+      background-position: center;
+    }
+
+    .image-one {
+      background-image: var(--portrait-1);
+    }
+
+    .image-two {
+      background-image: var(--portrait-2);
+    }
+
+    .image-three {
+      background-image: var(--portrait-3);
+    }
+
+    .image-caption {
+      width: min(100% - 60px, 1360px);
+      margin: -110px auto 130px;
+
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+
+      font-size: 0.65rem;
+      line-height: 1.5;
+
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--muted);
+    }
+
+    /* =========================================
+       QUOTE
+    ========================================= */
+
+    .quote-section {
+      margin: 140px 0;
+
+      background: #1c1b19;
+      color: #fff;
+
+      padding: 130px 5vw;
+    }
+
+    .quote-wrap {
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    .quote-mark {
+      color: var(--accent);
+      font-family: var(--serif);
+      font-size: 8rem;
+      height: 90px;
+      line-height: 1;
+    }
+
+    blockquote {
+      font-family: var(--serif);
+      font-size: clamp(2.4rem, 5.2vw, 5.6rem);
+      line-height: 1.1;
+      letter-spacing: -0.045em;
+    }
+
+    .quote-credit {
+      margin-top: 42px;
+
+      font-size: 0.72rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+
+      opacity: 0.62;
+    }
+
+    /* =========================================
+       COMPANY / INUFF
+    ========================================= */
+
+    .company-title {
+      width: min(100% - 40px, 1100px);
+      margin: 150px auto 110px;
+
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+
+      padding: 50px 0;
+
+      text-align: center;
+    }
+
+    .company-title small {
+      display: block;
+
+      color: var(--muted);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+
+      margin-bottom: 15px;
+    }
+
+    .company-title h2 {
+      font-family: var(--serif);
+      font-size: clamp(4rem, 10vw, 9rem);
+      line-height: 0.95;
+
+      font-weight: 500;
+      letter-spacing: -0.07em;
+    }
+
+    /* =========================================
+       CLOSING
+    ========================================= */
+
+    .closing {
+      margin-top: 150px;
+
+      padding: 140px 5vw;
+
+      background: #ded8cf;
+    }
+
+    .closing-inner {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .closing .small {
+      font-size: 0.7rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+
+      margin-bottom: 30px;
+    }
+
+    .closing h2 {
+      font-family: var(--serif);
+
+      font-size: clamp(2.6rem, 6vw, 6rem);
+      font-weight: 500;
+
+      line-height: 1.08;
+      letter-spacing: -0.05em;
+    }
+
+    /* =========================================
+       FOOTER
+    ========================================= */
+
+    footer {
+      background: #101010;
+      color: #ddd;
+
+      padding: 70px 5vw 35px;
+    }
+
+    .footer-main {
+      max-width: 1300px;
+      margin: auto;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      gap: 50px;
+    }
+
+    .footer-logo {
+      font-family: var(--serif);
+      color: #fff;
+
+      font-size: clamp(2.8rem, 7vw, 6rem);
+      letter-spacing: -0.055em;
+      line-height: 1;
+    }
+
+    .footer-info {
+      max-width: 390px;
+
+      font-size: 0.73rem;
+      line-height: 1.8;
+
+      color: #949494;
+    }
+
+    .copyright {
+      max-width: 1300px;
+      margin: 60px auto 0;
+
+      padding-top: 22px;
+
+      border-top: 1px solid #323232;
+
+      font-size: 0.62rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #777;
+    }
+
+    /* =========================================
+       RESPONSIVE
+    ========================================= */
+
+    @media (max-width: 800px) {
+      .hero {
+        min-height: 90vh;
+        background-attachment: scroll;
+      }
+
+      .topbar {
+        padding: 20px 22px;
+      }
+
+      .hero-content {
+        padding: 130px 22px 35px;
+      }
+
+      .hero h1 {
+        font-size: clamp(4rem, 20vw, 7rem);
+      }
+
+      .hero-bottom {
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .intro {
+        padding: 75px 22px 90px;
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .article {
+        width: calc(100% - 44px);
+      }
+
+      .qa {
+        margin-bottom: 65px;
+      }
+
+      .answer {
+        font-size: 1rem;
+      }
+
+      .editorial-image {
+        width: 100%;
+        height: 72vh;
+
+        margin: 90px 0 0;
+      }
+
+      .image-caption {
+        width: calc(100% - 44px);
+        margin: 15px auto 90px;
+
+        flex-direction: column;
+      }
+
+      .quote-section {
+        padding: 95px 22px;
+        margin: 90px 0;
+      }
+
+      .company-title {
+        margin: 90px auto 70px;
+      }
+
+      .closing {
+        margin-top: 100px;
+        padding: 90px 22px;
+      }
+
+      footer {
+        padding-left: 22px;
+        padding-right: 22px;
+      }
+
+      .footer-main {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ================================
+       HEADER
+  ================================= -->
+
+  <header class="topbar">
+    <a href="#" class="brand">
+      Marie Claire
+    </a>
+
+    <div class="issue">
+      October 2026
+    </div>
+  </header>
+
+
+  <!-- ================================
+       HERO
+  ================================= -->
+
+  <section class="hero">
+    <div class="hero-content">
+
+      <div class="hero-kicker">
+        Interview / Actor
+      </div>
+
+      <h1>
+        Park<br>
+        <em>Si Woo</em>
+      </h1>
+
+      <div class="hero-bottom">
+        <span>Marie Claire · October 2026</span>
+        <span>On challenge, acting &amp; INUFF</span>
+      </div>
+
+    </div>
+  </section>
+
+
+  <main>
+
+    <!-- ================================
+         INTRO
+    ================================= -->
+
+    <section class="intro">
+
+      <div class="intro-label">
+        The Interview
+      </div>
+
+      <div class="intro-text">
+        Không biết trước đáp án mới khiến con đường trở nên
+        <span>thú vị.</span>
+        Với Park Si Woo, thử thách không phải điều để né tránh,
+        mà là cách anh tiếp tục tiến về phía trước.
+      </div>
+
+    </section>
+
+
+    <!-- ================================
+         ARTICLE — PART 1
+    ================================= -->
+
+    <article class="article">
+
+      <section class="qa">
+
+        <h2 class="question">
+          Hôm nay trước khi chụp, cũng có lúc bạn phồng má lên đúng không?
+          Nghe nói phồng má là một trong những thói quen của bạn trước khi
+          bắt đầu quay hoặc chụp.
+        </h2>
+
+        <div class="answer">
+          <p>
+            Trước buổi quay đầu tiên mình lúc nào cũng căng thẳng, và cứ mỗi
+            lần như vậy, chẳng biết từ lúc nào mình lại vô thức phồng má lên.
+            Có lẽ đó là một hành động vô thức để điều hòa lại nhịp thở.
+          </p>
+
+          <p>
+            Cũng có thể xem như một thói quen trước khi mình tập trung vào công việc.
+          </p>
+        </div>
+
+      </section>
+
+
+      <section class="qa">
+
+        <h2 class="question">
+          Có lẽ đó cũng là cách giúp bạn giải tỏa căng thẳng khi luôn phải
+          đối diện với những môi trường mới.
+        </h2>
+
+        <div class="answer">
+
+          <p>
+            Trước đây mình rất dễ căng thẳng, nhưng dạo gần đây có vẻ mình đang
+            dần học được cách tận hưởng mọi thứ.
+          </p>
+
+          <p>
+            Khi nghĩ rằng từng trải nghiệm mình đang có hôm nay chưa chắc sau này
+            sẽ có cơ hội được trải qua lần nữa, mình thấy chúng trở nên quý giá hơn
+            và cũng muốn tận hưởng chúng thật trọn vẹn.
+          </p>
+
+          <p>
+            Như buổi chụp hình cho &lt;Marie Claire&gt; hôm nay chẳng hạn,
+            đâu phải cứ muốn là sẽ có cơ hội được trải nghiệm những điều như thế này.
+            Vì vậy mình cố gắng nghĩ theo hướng đó và tận hưởng mọi thứ.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <section class="qa">
+
+        <h2 class="question">
+          Nếu nhớ lại ngày quay đầu tiên của bộ phim truyền hình đầu tiên trong
+          sự nghiệp, cảm xúc nào hiện lên rõ nhất trong bạn?
+        </h2>
+
+        <div class="answer">
+
+          <p>
+            Đó là tác phẩm đầu tiên mình đảm nhận sau khi chuyển từ idol sang
+            diễn viên, hơn nữa mình lại nhận được một cơ hội vô cùng lớn khi
+            đảm nhận vai chính.
+          </p>
+
+          <p>
+            Cho tới tận trước ngày chính thức bước vào quay, hình như ngày nào
+            mình cũng nghĩ: “Mình thật sự sắp làm chuyện này sao?”
+          </p>
+
+          <p>
+            Mình lo lắng rất nhiều. Đương nhiên lúc đó mình hoàn toàn không thể
+            tận hưởng quá trình ấy.
+          </p>
+
+          <p>
+            Có lẽ cho đến tận cảnh quay cuối cùng, mình vẫn không thể buông được
+            cảm giác lo lắng và căng thẳng. Chính vì vậy mà sau này nhìn lại,
+            mình thấy có rất nhiều điều còn đáng tiếc.
+          </p>
+
+          <p>
+            Bây giờ nghĩ lại, mình cũng tự hỏi nếu khi ấy có thể thả lỏng hơn dù
+            chỉ một chút thì có lẽ mình đã làm tốt hơn. Nhưng nếu nhìn theo hướng
+            ngược lại, chính trải nghiệm đó đã giúp mình có được tâm thế như hiện tại.
+          </p>
+
+        </div>
+
+      </section>
+
+    </article>
+
+
+    <!-- ================================
+         IMAGE 1
+    ================================= -->
+
+    <div class="editorial-image image-one"></div>
+
+    <div class="image-caption">
+      <span>Park Si Woo</span>
+      <span>Marie Claire · October 2026</span>
+    </div>
+
+
+    <!-- ================================
+         ARTICLE — PART 2
+    ================================= -->
+
+    <article class="article">
+
+      <section class="qa">
+
+        <h2 class="question">
+          Bạn có linh cảm rằng ngay từ tác phẩm đầu tay, mình sẽ nhận được
+          nhiều sự quan tâm đến vậy không?
+        </h2>
+
+        <div class="answer">
+
+          <p>
+            Khi lựa chọn làm điều gì đó, mình vốn là người khá tự tin.
+            Vì vậy, dù không nghĩ rằng tác phẩm sẽ nhận được tình cảm lớn đến mức này,
+            mình vẫn nghĩ ít nhất nó sẽ có thể thu hút được sự chú ý nhất định.
+          </p>
+
+          <p>
+            Nói thật thì trong lòng mình cũng có kỳ vọng ở một mức nào đó.
+          </p>
+
+          <p>
+            Nhưng kết quả lại vượt xa những gì mình từng mong đợi, mình nhận được
+            quá nhiều tình cảm nên đến tận bây giờ vẫn còn cảm giác ngỡ ngàng.
+            Mặt khác, mình cũng có chút sợ hãi.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <section class="qa">
+
+        <h2 class="question">
+          Đó là nỗi sợ như thế nào?
+        </h2>
+
+        <div class="answer">
+
+          <p>
+            Có lẽ vì ngay từ đầu mình đã nhận được rất nhiều tình cảm, nên mình
+            càng suy nghĩ nhiều hơn về bước tiếp theo.
+          </p>
+
+          <p>
+            Bên cạnh đó cũng có những phản hồi mang tính phê bình, nên mình cảm thấy
+            có áp lực rằng bản thân phải cải thiện thật tốt những điểm ấy rồi cho
+            mọi người thấy sự tiến bộ.
+          </p>
+
+          <p>
+            Có người góp ý về cách phát âm của mình, vì vậy hiện tại mình đang xem
+            lại những thói quen ngôn ngữ của bản thân và từng bước điều chỉnh chúng.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <section class="qa">
+
+        <h2 class="question">
+          Từ chương trình sống còn, debut với tư cách idol cho đến chuyển hướng
+          sang diễn xuất, mỗi chặng đường của bạn dường như đều nối tiếp bằng
+          một thử thách mới. Bạn vốn là người không dễ chùn bước trước thử thách sao?
+        </h2>
+
+        <div class="answer">
+
+          <p>
+            Mình nghĩ đối với bất kỳ ai, bản thân cuộc sống đã là một chuỗi thử
+            thách rồi. Chỉ là trong hành trình đó, thay vì lựa chọn sự ổn định,
+            mình thường chọn cách trực tiếp đối diện với thử thách.
+          </p>
+
+          <p>
+            Mình tin vào câu nói rằng chỉ cần tiếp tục bước đi thì rồi sẽ có
+            một khoảnh khắc tốt đẹp nào đó xuất hiện.
+          </p>
+
+          <p>
+            Tất nhiên cũng từng có những lúc mình muốn từ bỏ. Nhưng có lẽ nhờ
+            cứ tiếp tục thử sức hết lần này đến lần khác mà cuối cùng mình đã gặp
+            được một tác phẩm tuyệt vời và cũng nhận được rất nhiều tình cảm.
+          </p>
+
+        </div>
+
+      </section>
+
+    </article>
+
+
+    <!-- ================================
+         QUOTE
+    ================================= -->
+
+    <section class="quote-section">
+
+      <div class="quote-wrap">
+
+        <div class="quote-mark">
+          “
+        </div>
+
+        <blockquote>
+          Chỉ cần tiếp tục bước đi thì rồi sẽ có một khoảnh khắc tốt đẹp nào đó xuất hiện.
+        </blockquote>
+
+        <div class="quote-credit">
+          Park Si Woo · Marie Claire 10/2026
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================================
+         INUFF
+    ================================= -->
+
+    <section class="company-title">
+
+      <small>
+        The next chapter
+      </small>
+
+      <h2>
+        INUFF
+      </h2>
+
+    </section>
+
+
+    <article class="article">
+
+      <section class="qa">
+
+        <h2 class="question">
+          Điều gì khiến bạn cảm thấy là thử thách lớn nhất trong cuộc đời mình
+          cho đến nay?
+        </h2>
+
+        <div class="answer">
+          <p>
+            Gần đây mình đã thành lập công ty riêng mang tên INUFF.
+            Có lẽ đây chính là thử thách, đồng thời cũng là cuộc phiêu lưu lớn nhất
+            trong cuộc đời mình cho đến thời điểm hiện tại.
+          </p>
+        </div>
+
+      </section>
+
+
+      <section class="qa">
+
+        <h2 class="question">
+          Điều gì khiến bạn nảy ra ý định thành lập một công ty giải trí?
+        </h2>
+
+        <div class="answer">
+          <p>
+            Ngay từ khi còn nhỏ, đó đã là ước mơ cuối cùng mà mình muốn hướng tới.
+          </p>
+        </div>
+
+      </section>
+
+
+      <section class="qa">
+
+        <h2 class="question">
+          Bạn bắt đầu có ước mơ ấy từ năm bao nhiêu tuổi?
+        </h2>
+
+        <div class="answer">
+
+          <p>
+            Từ năm lớp 9.
+          </p>
+
+          <p>
+            Khi còn nhỏ, người ta thường có những ước mơ rất lớn mà.
+            Chẳng hạn như muốn trở thành tổng thống, muốn bay vào vũ trụ…
+            Với mình, ước mơ ấy là điều hành một công ty giải trí.
+          </p>
+
+          <p>
+            Tất nhiên ước mơ đầu tiên của mình là trở thành diễn viên.
+            Nhưng mình không muốn chỉ dừng lại ở đó.
+          </p>
+
+          <p>
+            Ước mơ cuối cùng của mình là có thể mở ra một con đường tốt đẹp
+            cho những người cũng mang trong mình giấc mơ giống như mình.
+          </p>
+
+        </div>
+
+      </section>
+
+    </article>
+
+
+    <!-- ================================
+         IMAGE 2
+    ================================= -->
+
+    <div class="editorial-image image-two"></div>
+
+    <div class="image-caption">
+      <span>Dream / Challenge / Growth</span>
+      <span>October 2026</span>
+    </div>
+
+
+    <!-- ================================
+         ARTICLE — INUFF
+    ================================= -->
+
+    <article class="article">
+
+      <section class="qa">
+
+        <h2 class="question">
+          Vậy là sau khoảng 10 năm, bạn đã biến ước mơ ấy thành hiện thực.
+          Hiện tại bạn đang tiếp tục phát triển ước mơ ấy như thế nào?
+        </h2>
+
+        <div class="answer">
+
+          <p>
+            Vì thành lập công ty khi tuổi đời còn khá trẻ, nên thực tế mình nhận
+            được nhiều ánh nhìn tiêu cực hơn là tích cực.
+          </p>
+
+          <p>
+            Mình đã nghe rất nhiều lời như: “Liều lĩnh quá”, “Chỉ tổ ném tiền qua
+            cửa sổ thôi”, hay “Bản thân cậu còn chưa phải một nghệ sĩ thành công thì
+            làm sao có thể điều hành một công ty giải trí được?”
+          </p>
+
+          <p>
+            Thực ra những lời đó cũng không phải hoàn toàn vô lý.
+            Nhưng mình không dao động vì chúng.
+          </p>
+
+          <p>
+            Mình thường nói với những người ấy rằng:
+            “Có thể mọi người thấy việc này liều lĩnh, nhưng chính vì vậy nó sẽ
+            càng thú vị hơn, nên hãy cứ chờ xem.”
+          </p>
+
+          <p>
+            Mình không biết thử thách này rồi sẽ đưa mình đến một tương lai như
+            thế nào. Nhưng dù kết quả cuối cùng là thành công hay thất bại,
+            mình tin rằng đó vẫn sẽ là con đường giúp mình trưởng thành.
+          </p>
+
+          <p>
+            Mình muốn tự mình theo dõi xem mình có thể đi được tới đâu và muốn
+            trải nghiệm thật trọn vẹn toàn bộ quá trình ấy.
+          </p>
+
+          <p>
+            Cụ thể hơn, mình muốn xây dựng thật tốt đội ngũ nghệ sĩ sẽ đồng hành
+            cùng INUFF.
+          </p>
+
+          <p>
+            Đồng thời, bản thân mình cũng là một trong những diễn viên trực thuộc
+            công ty, nên mục tiêu của mình là tiếp tục trưởng thành thật tốt và
+            trở thành gương mặt đại diện của INUFF.
+          </p>
+
+        </div>
+
+      </section>
+
+    </article>
+
+
+    <!-- ================================
+         IMAGE 3
+    ================================= -->
+
+    <div class="editorial-image image-three"></div>
+
+    <div class="image-caption">
+      <span>Actor Park Si Woo</span>
+      <span>Editorial portrait</span>
+    </div>
+
+
+    <!-- ================================
+         ACTING
+    ================================= -->
+
+    <article class="article">
+
+      <section class="qa">
+
+        <h2 class="question">
+          Bạn từng nói nghề diễn viên là “lý do mình sống”.
+          Theo bạn, sức hấp dẫn lớn nhất của công việc này là gì?
+        </h2>
+
+        <div class="answer">
+
+          <p>
+            Đây là chuyện bố mẹ kể cho mình nghe, nhưng nghe nói ngay từ tiệc
+            thôi nôi mình đã rất thích được mọi người chú ý rồi.
+          </p>
+
+          <p>
+            Ước mơ nghề nghiệp của mình cũng luôn là trở thành người nổi tiếng
+            hoặc diễn viên.
+          </p>
+
+          <p>
+            Có lẽ vì vậy mà khi còn nhỏ, lúc mình nói muốn một mình lên Seoul để
+            thực hiện ước mơ, bố mẹ cũng không phản đối.
+            Họ hoàn toàn ủng hộ ước mơ của mình.
+          </p>
+
+          <p>
+            Nghĩ lại những chuyện ấy, có lẽ mình bị công việc này thu hút một cách
+            rất bản năng.
+          </p>
+
+          <p>
+            Mặt khác, mình cũng nghĩ chính sự bất định — rằng mọi chuyện có thể
+            thành công nhưng cũng có thể không — khiến mình sống và cố gắng chăm chỉ hơn.
+          </p>
+
+          <p>
+            Vì không biết mình sẽ gặp được cơ hội nào và vào thời điểm nào,
+            nên mình cứ không ngừng làm một điều gì đó.
+          </p>
+
+          <p>
+            Và chính những nỗ lực ấy lại giúp mình trưởng thành.
+            Có lẽ đó cũng chính là sức hấp dẫn của nghề này.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <section class="qa">
+
+        <h2 class="question">
+          Vậy là thay vì một con đường an toàn với phương hướng đã được định sẵn,
+          bạn lại có xu hướng lựa chọn một con đường dù bất định nhưng thú vị hơn.
+        </h2>
+
+        <div class="answer">
+
+          <p>
+            Nếu biết sẵn đáp án thì đâu còn thú vị nữa.
+            Mình nghĩ cũng có những điều chính vì không biết trước nên mới càng hấp dẫn.
+          </p>
+
+          <p>
+            Nếu có một mong ước, mình hy vọng con đường ấy sẽ kéo dài thật,
+            thật lâu.
+          </p>
+
+          <p>
+            Mình nghĩ duy trì được một sự nghiệp lâu dài còn khó hơn cả việc
+            đạt được thành công.
+          </p>
+
+          <p>
+            Muốn làm được như vậy, mình phải liên tục nhận được tình cảm của
+            công chúng, đồng thời cũng phải trở thành một diễn viên khiến các
+            biên kịch và đạo diễn luôn muốn tiếp tục hợp tác.
+          </p>
+
+          <p>
+            Vì vậy, thay vì nghĩ mình nhất định phải đóng một tác phẩm nào đó
+            hay phải giành được một giải thưởng nào đó, điều mình mong muốn hơn
+            cả là đến tận năm 80, 90 tuổi vẫn có thể sống với tư cách một diễn viên.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <section class="qa">
+
+        <h2 class="question">
+          Hiện tại bạn đang chuẩn bị cho thử thách nào tiếp theo?
+          Điều gì bạn đang chuẩn bị đối diện dù vẫn có chút sợ hãi nhưng
+          không hề chùn bước?
+        </h2>
+
+        <div class="answer">
+
+          <p>
+            Mình đang chuẩn bị cho một tác phẩm mới, nơi mình có thể cho mọi người
+            thấy một hình ảnh khác so với bộ phim đầu tiên.
+          </p>
+
+          <p>
+            Khi xem một tác phẩm hay, ngay cả khi đã về nhà hay sang đến ngày hôm sau,
+            người ta vẫn tiếp tục nghĩ về nó, đúng không?
+          </p>
+
+          <p>
+            Mình muốn tiếp tục thử thách bản thân để có thể trở thành một diễn viên
+            đủ sức để lại dư âm như thế.
+          </p>
+
+          <p>
+            Ngoài ra, mình cũng đang chuẩn bị cho một thử thách hoàn toàn mới mà
+            trước đây chưa từng làm.
+          </p>
+
+          <p>
+            Vì vậy, hy vọng lần tới khi gặp lại &lt;Marie Claire&gt;, mình sẽ
+            trưởng thành hơn và cũng bớt căng thẳng hơn một chút.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <section class="qa">
+
+        <h2 class="question">
+          Giữa vô số thử thách ấy, tôi có cảm giác và cả một chút linh cảm rằng
+          rồi chúng ta sẽ lại gặp nhau. Có lẽ ngày ấy sẽ đến sớm thôi nhỉ?
+        </h2>
+
+      </section>
+
+    </article>
+
+
+    <!-- ================================
+         CLOSING
+    ================================= -->
+
+    <section class="closing">
+
+      <div class="closing-inner">
+
+        <div class="small">
+          Marie Claire · Conversation
+        </div>
+
+        <h2>
+          “Nếu biết sẵn đáp án thì đâu còn thú vị nữa.”
+        </h2>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================================
+       FOOTER
+  ================================= -->
+
+  <footer>
+
+    <div class="footer-main">
+
+      <div class="footer-logo">
+        Park<br>
+        Si Woo
+      </div>
+
+      <div class="footer-info">
+        <p>
+          Vietnamese editorial adaptation based on the supplied
+          Marie Claire interview text.
+        </p>
+
+        <p style="margin-top: 15px;">
+          Replace all placeholder image URLs with licensed or authorized
+          Park Si Woo photography before publication.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      Marie Claire · October 2026 · Park Si Woo
+    </div>
+
+  </footer>
+
+</body>
+</html>
