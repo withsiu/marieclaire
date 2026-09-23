@@ -1,85 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff9fb">
+  <meta name="description" content="Park Si Woo Magazine Archive">
+  <title>Park Si Woo Magazine Archive</title>
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
-
-  <meta
-    name="description"
-    content="Marie Claire 10/2026 — Park Si Woo. Phỏng vấn về diễn xuất, thử thách, INUFF và hành trình theo đuổi ước mơ."
-  />
-
-  <title>Park Si Woo — Marie Claire 10/2026</title>
-
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      /*
-        ============================================
-        THAY LINK ẢNH PARK SI WOO Ở ĐÂY
-        ============================================
-
-        Nên dùng link ảnh trực tiếp dạng:
-        https://domain.com/image.jpg
-
-        Không nên dùng link tới trang chứa ảnh.
-      */
-
-      --hero-image:
-        url("5 [Marie Claire 10月刊-PARKSIWOO - Even | rednote - Discover and share your lifestyle] wkjkQN65u5cFWGS https://www.xiaohongshu.com/discovery/item/6ab339db000000001b01db6c?source=webshare&xhsshare=pc_web&xsec_token=AB7BW6WaX36GPVvtgB-bNzHrPqU0F5wxhP272pvD7edu8=&xsec_source=pc_share");
-
-      --portrait-1:
-        url("5 [Marie Claire 10月刊-PARKSIWOO - Even | rednote - Discover and share your lifestyle] wkjkQN65u5cFWGS https://www.xiaohongshu.com/discovery/item/6ab339db000000001b01db6c?source=webshare&xhsshare=pc_web&xsec_token=AB7BW6WaX36GPVvtgB-bNzHrPqU0F5wxhP272pvD7edu8=&xsec_source=pc_share");
-
-      --portrait-2:
-        url("5 [Marie Claire 10月刊-PARKSIWOO - Even | rednote - Discover and share your lifestyle] wkjkQN65u5cFWGS https://www.xiaohongshu.com/discovery/item/6ab339db000000001b01db6c?source=webshare&xhsshare=pc_web&xsec_token=AB7BW6WaX36GPVvtgB-bNzHrPqU0F5wxhP272pvD7edu8=&xsec_source=pc_share");
-
-      --portrait-3:
-        url("5 [Marie Claire 10月刊-PARKSIWOO - Even | rednote - Discover and share your lifestyle] wkjkQN65u5cFWGS https://www.xiaohongshu.com/discovery/item/6ab339db000000001b01db6c?source=webshare&xhsshare=pc_web&xsec_token=AB7BW6WaX36GPVvtgB-bNzHrPqU0F5wxhP272pvD7edu8=&xsec_source=pc_share");
-
-      --bg: #f4f1eb;
-      --paper: #faf8f4;
-      --text: #171717;
-      --muted: #75716a;
-      --line: #d7d2c9;
-      --accent: #9d1f26;
-
-      --serif: "Playfair Display", Georgia, serif;
-      --sans: "DM Sans", Arial, sans-serif;
+      --bg: #fff9fb;
+      --surface: #fffefe;
+      --surface-soft: #fff4f7;
+      --rose-100: #fbe4ec;
+      --rose-200: #f4cad8;
+      --rose-400: #d97e9b;
+      --rose-500: #c65d7f;
+      --rose-700: #8d3c59;
+      --ink: #4c313b;
+      --muted: #846c75;
+      --line: rgba(198,93,127,.16);
+      --shadow: 0 14px 38px rgba(126,57,82,.08);
+      --radius: 26px;
+      --content: 900px;
+      --article: 760px;
+      --font: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; }
 
     html {
       scroll-behavior: smooth;
     }
 
     body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: var(--sans);
-      line-height: 1.8;
-    }
-
-    img {
-      display: block;
-      width: 100%;
+      margin: 0;
+      min-width: 320px;
+      background:
+        radial-gradient(circle at 8% 2%, rgba(255,255,255,.98), transparent 28rem),
+        radial-gradient(circle at 95% 18%, rgba(251,228,236,.45), transparent 28rem),
+        var(--bg);
+      color: var(--ink);
+      font-family: var(--font);
+      font-size: 16px;
+      line-height: 1.78;
+      text-rendering: optimizeLegibility;
     }
 
     a {
@@ -88,1196 +57,1104 @@
     }
 
     ::selection {
-      background: var(--text);
-      color: var(--paper);
+      background: var(--rose-200);
+      color: var(--ink);
     }
-
-    /* =========================================
-       HEADER
-    ========================================= */
-
-    .topbar {
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 10;
-
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      padding: 26px 5vw;
-
-      color: #fff;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.32);
-    }
-
-    .brand {
-      font-family: var(--serif);
-      font-size: clamp(1.2rem, 2vw, 1.8rem);
-      font-weight: 600;
-      letter-spacing: -0.03em;
-    }
-
-    .issue {
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      letter-spacing: 0.18em;
-      font-weight: 500;
-    }
-
-    /* =========================================
-       HERO
-    ========================================= */
 
     .hero {
-      position: relative;
-
-      min-height: 100vh;
-
-      background:
-        linear-gradient(
-          180deg,
-          rgba(0, 0, 0, 0.1) 0%,
-          rgba(0, 0, 0, 0.04) 38%,
-          rgba(0, 0, 0, 0.66) 100%
-        ),
-        var(--hero-image);
-
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-
-      display: flex;
-      align-items: flex-end;
-
-      color: white;
-    }
-
-    .hero-content {
-      width: 100%;
-      padding: 150px 5vw 65px;
-    }
-
-    .hero-kicker {
-      display: flex;
-      gap: 12px;
-      align-items: center;
-
-      margin-bottom: 14px;
-
-      text-transform: uppercase;
-      font-size: 0.72rem;
-      letter-spacing: 0.19em;
-    }
-
-    .hero-kicker::before {
-      content: "";
-      width: 35px;
-      height: 1px;
-      background: white;
-    }
-
-    .hero h1 {
-      font-family: var(--serif);
-      font-weight: 500;
-      line-height: 0.88;
-
-      font-size: clamp(4.2rem, 12vw, 11rem);
-      letter-spacing: -0.065em;
-
-      max-width: 1100px;
-    }
-
-    .hero h1 em {
-      font-weight: 500;
-      opacity: 0.85;
-    }
-
-    .hero-bottom {
-      margin-top: 40px;
-
-      display: flex;
-      justify-content: space-between;
-      gap: 30px;
-
-      border-top: 1px solid rgba(255, 255, 255, 0.45);
-      padding-top: 18px;
-
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.11em;
-    }
-
-    /* =========================================
-       INTRO
-    ========================================= */
-
-    main {
-      overflow: hidden;
-    }
-
-    .intro {
-      max-width: 1260px;
-      margin: auto;
-
-      padding: 110px 5vw 120px;
-
-      display: grid;
-      grid-template-columns: 0.8fr 2fr;
-      gap: 8vw;
-    }
-
-    .intro-label {
-      font-size: 0.72rem;
-      letter-spacing: 0.17em;
-      text-transform: uppercase;
-      color: var(--muted);
-
-      padding-top: 14px;
-    }
-
-    .intro-text {
-      font-family: var(--serif);
-      font-size: clamp(1.9rem, 3.5vw, 3.7rem);
-      line-height: 1.2;
-      letter-spacing: -0.035em;
-    }
-
-    .intro-text span {
-      color: var(--accent);
-    }
-
-    /* =========================================
-       ARTICLE
-    ========================================= */
-
-    .article {
-      width: min(100% - 40px, 780px);
-      margin: auto;
-    }
-
-    .qa {
-      margin-bottom: 78px;
-    }
-
-    .question {
-      font-family: var(--serif);
-      font-weight: 600;
-
-      font-size: clamp(1.35rem, 2.3vw, 2rem);
-      line-height: 1.45;
-
-      margin-bottom: 26px;
-    }
-
-    .question::before {
-      content: "Q";
-      color: var(--accent);
-
-      font-family: var(--sans);
-      font-size: 0.68rem;
-      font-weight: 600;
-      letter-spacing: 0.15em;
-
-      display: block;
-
-      margin-bottom: 10px;
-    }
-
-    .answer {
-      color: #373531;
-      font-weight: 300;
-      font-size: 1.04rem;
-      line-height: 1.95;
-    }
-
-    .answer p + p {
-      margin-top: 18px;
-    }
-
-    /* =========================================
-       FULL WIDTH IMAGES
-    ========================================= */
-
-    .editorial-image {
-      width: min(100% - 60px, 1360px);
-      height: min(78vh, 900px);
-
-      margin: 130px auto;
-
-      background-size: cover;
-      background-position: center;
-    }
-
-    .image-one {
-      background-image: var(--portrait-1);
-    }
-
-    .image-two {
-      background-image: var(--portrait-2);
-    }
-
-    .image-three {
-      background-image: var(--portrait-3);
-    }
-
-    .image-caption {
-      width: min(100% - 60px, 1360px);
-      margin: -110px auto 130px;
-
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-
-      font-size: 0.65rem;
-      line-height: 1.5;
-
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-      color: var(--muted);
-    }
-
-    /* =========================================
-       QUOTE
-    ========================================= */
-
-    .quote-section {
-      margin: 140px 0;
-
-      background: #1c1b19;
-      color: #fff;
-
-      padding: 130px 5vw;
-    }
-
-    .quote-wrap {
-      max-width: 1150px;
-      margin: auto;
-    }
-
-    .quote-mark {
-      color: var(--accent);
-      font-family: var(--serif);
-      font-size: 8rem;
-      height: 90px;
-      line-height: 1;
-    }
-
-    blockquote {
-      font-family: var(--serif);
-      font-size: clamp(2.4rem, 5.2vw, 5.6rem);
-      line-height: 1.1;
-      letter-spacing: -0.045em;
-    }
-
-    .quote-credit {
-      margin-top: 42px;
-
-      font-size: 0.72rem;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-
-      opacity: 0.62;
-    }
-
-    /* =========================================
-       COMPANY / INUFF
-    ========================================= */
-
-    .company-title {
-      width: min(100% - 40px, 1100px);
-      margin: 150px auto 110px;
-
-      border-top: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
-
-      padding: 50px 0;
-
+      width: min(var(--content), calc(100% - 2rem));
+      margin: 0 auto;
+      padding: clamp(3.5rem, 8vw, 7rem) 0 2.2rem;
       text-align: center;
     }
 
-    .company-title small {
-      display: block;
+    .eyebrow {
+      color: var(--rose-700);
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
 
+    h1 {
+      margin: .6rem 0 0;
+      font-size: clamp(3.2rem, 10vw, 7rem);
+      line-height: .95;
+      letter-spacing: -.06em;
+      font-weight: 600;
+    }
+
+    .subtitle {
+      max-width: 620px;
+      margin: 1.4rem auto 0;
       color: var(--muted);
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      letter-spacing: 0.18em;
-
-      margin-bottom: 15px;
+      font-size: 1rem;
     }
 
-    .company-title h2 {
-      font-family: var(--serif);
-      font-size: clamp(4rem, 10vw, 9rem);
-      line-height: 0.95;
-
-      font-weight: 500;
-      letter-spacing: -0.07em;
+    .mag-tabs {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      padding: .7rem 1rem;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background: rgba(255,249,251,.9);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
     }
 
-    /* =========================================
-       CLOSING
-    ========================================= */
-
-    .closing {
-      margin-top: 150px;
-
-      padding: 140px 5vw;
-
-      background: #ded8cf;
-    }
-
-    .closing-inner {
-      max-width: 1100px;
+    .mag-tabs-inner {
+      width: min(var(--content), 100%);
       margin: auto;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: .65rem;
     }
 
-    .closing .small {
-      font-size: 0.7rem;
-      letter-spacing: 0.16em;
+    .mag-tab {
+      padding: .75rem 1rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,255,255,.72);
+      text-align: center;
+      font-size: .84rem;
+      font-weight: 700;
+      color: var(--muted);
+    }
+
+    .mag-tab.active {
+      color: #fff;
+      border-color: transparent;
+      background: var(--rose-500);
+      box-shadow: 0 7px 18px rgba(198,93,127,.18);
+    }
+
+    main {
+      width: min(var(--content), calc(100% - 1rem));
+      margin: 1.4rem auto 4rem;
+    }
+
+    .mag-section {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255,254,254,.93);
+      box-shadow: var(--shadow);
+    }
+
+    .coming-soon {
+      padding: clamp(2rem, 6vw, 4.5rem);
+      margin-bottom: 1.2rem;
+      text-align: center;
+    }
+
+    .coming-soon .label {
+      color: var(--rose-500);
+      font-size: .75rem;
+      font-weight: 800;
+      letter-spacing: .12em;
       text-transform: uppercase;
-
-      margin-bottom: 30px;
     }
 
-    .closing h2 {
-      font-family: var(--serif);
-
-      font-size: clamp(2.6rem, 6vw, 6rem);
-      font-weight: 500;
-
-      line-height: 1.08;
-      letter-spacing: -0.05em;
+    .coming-soon h2 {
+      margin: .55rem 0 .65rem;
+      font-size: clamp(2rem, 5vw, 3.6rem);
+      line-height: 1.05;
+      letter-spacing: -.04em;
+      font-weight: 600;
     }
 
-    /* =========================================
-       FOOTER
-    ========================================= */
+    .coming-soon p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .marie {
+      overflow: hidden;
+    }
+
+    .article-title {
+      width: min(var(--article), calc(100% - 2.2rem));
+      margin: 0 auto;
+      padding: 2.4rem 0 0;
+      text-align: center;
+    }
+
+    .article-title .article-label {
+      margin: 0 0 .55rem;
+      color: var(--rose-500);
+      font-size: .72rem;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .article-title h3 {
+      margin: 0;
+      font-size: clamp(1.7rem, 4vw, 2.7rem);
+      line-height: 1.2;
+      letter-spacing: -.035em;
+      font-weight: 600;
+    }
+
+    .cosmo {
+      margin-bottom: 1.2rem;
+      overflow: hidden;
+    }
+
+    .mag-head {
+      padding: clamp(2rem, 5vw, 3.4rem);
+      text-align: center;
+      background: linear-gradient(145deg, rgba(255,255,255,.95), rgba(255,244,247,.76));
+      border-bottom: 1px solid var(--line);
+    }
+
+    .mag-head .kicker {
+      color: var(--rose-700);
+      font-size: .76rem;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .mag-head h2 {
+      margin: .45rem 0 0;
+      font-size: clamp(2.4rem, 7vw, 5rem);
+      line-height: 1;
+      letter-spacing: -.055em;
+      font-weight: 600;
+    }
+
+    .mag-head .date {
+      margin-top: .9rem;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    .hero-photo {
+      margin: 0;
+      background: var(--surface-soft);
+    }
+
+    .article {
+      width: min(var(--article), calc(100% - 2.2rem));
+      margin: 0 auto;
+      padding: clamp(2.7rem, 6vw, 5rem) 0;
+    }
+
+    .qa {
+      margin-bottom: 3.2rem;
+    }
+
+    .qa:last-child {
+      margin-bottom: 0;
+    }
+
+    .question {
+      margin: 0 0 1rem;
+      font-size: 1.08rem;
+      line-height: 1.62;
+      letter-spacing: -.012em;
+      font-weight: 700;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    .question::before {
+      content: "Q. ";
+      color: var(--rose-500);
+    }
+
+    .answer {
+      color: #553f48;
+      text-align: justify;
+      text-justify: inter-word;
+      hyphens: auto;
+    }
+
+    .answer p {
+      margin: 0;
+    }
+
+    .answer p + p {
+      margin-top: .85rem;
+    }
 
     footer {
-      background: #101010;
-      color: #ddd;
-
-      padding: 70px 5vw 35px;
-    }
-
-    .footer-main {
-      max-width: 1300px;
-      margin: auto;
-
+      width: min(var(--content), calc(100% - 2rem));
+      margin: 0 auto 3rem;
+      padding-top: 1.4rem;
+      border-top: 1px solid var(--line);
       display: flex;
       justify-content: space-between;
-      align-items: flex-end;
-
-      gap: 50px;
+      gap: 1rem;
+      color: var(--muted);
+      font-size: .78rem;
     }
 
-    .footer-logo {
-      font-family: var(--serif);
-      color: #fff;
+    @media (max-width: 640px) {
+      body {
+        font-size: 15.5px;
+        line-height: 1.74;
+      }
 
-      font-size: clamp(2.8rem, 7vw, 6rem);
-      letter-spacing: -0.055em;
-      line-height: 1;
-    }
-
-    .footer-info {
-      max-width: 390px;
-
-      font-size: 0.73rem;
-      line-height: 1.8;
-
-      color: #949494;
-    }
-
-    .copyright {
-      max-width: 1300px;
-      margin: 60px auto 0;
-
-      padding-top: 22px;
-
-      border-top: 1px solid #323232;
-
-      font-size: 0.62rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: #777;
-    }
-
-    /* =========================================
-       RESPONSIVE
-    ========================================= */
-
-    @media (max-width: 800px) {
       .hero {
-        min-height: 90vh;
-        background-attachment: scroll;
+        padding-top: 3.5rem;
       }
 
-      .topbar {
-        padding: 20px 22px;
+      .mag-tabs {
+        padding-inline: .55rem;
       }
 
-      .hero-content {
-        padding: 130px 22px 35px;
+      .mag-tab {
+        padding-inline: .65rem;
+        font-size: .78rem;
       }
 
-      .hero h1 {
-        font-size: clamp(4rem, 20vw, 7rem);
-      }
-
-      .hero-bottom {
-        flex-direction: column;
-        gap: 8px;
-      }
-
-      .intro {
-        padding: 75px 22px 90px;
-        grid-template-columns: 1fr;
-        gap: 30px;
+      .mag-head {
+        padding-inline: 1.2rem;
       }
 
       .article {
-        width: calc(100% - 44px);
+        width: calc(100% - 1.7rem);
+        padding-top: 2.6rem;
       }
 
       .qa {
-        margin-bottom: 65px;
+        margin-bottom: 2.6rem;
       }
 
-      .answer {
+      .question {
         font-size: 1rem;
       }
 
-      .editorial-image {
-        width: 100%;
-        height: 72vh;
-
-        margin: 90px 0 0;
-      }
-
-      .image-caption {
-        width: calc(100% - 44px);
-        margin: 15px auto 90px;
-
-        flex-direction: column;
-      }
-
-      .quote-section {
-        padding: 95px 22px;
-        margin: 90px 0;
-      }
-
-      .company-title {
-        margin: 90px auto 70px;
-      }
-
-      .closing {
-        margin-top: 100px;
-        padding: 90px 22px;
+      .photo {
+        margin: 3rem auto;
       }
 
       footer {
-        padding-left: 22px;
-        padding-right: 22px;
-      }
-
-      .footer-main {
         flex-direction: column;
-        align-items: flex-start;
+        gap: .2rem;
       }
     }
+  
+    .four-tabs {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .top-photo {
+      width: min(520px, calc(100% - 1rem));
+      margin: 2.1rem auto 0;
+      padding: 0;
+    }
+
+    .top-photo img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      border-radius: 24px;
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      background: var(--surface-soft);
+    }
+
+    .simple-section,
+    .personal-section {
+      margin-top: 1.2rem;
+      overflow: hidden;
+    }
+
+    .simple-head {
+      padding: clamp(2rem, 5vw, 3.4rem);
+      text-align: center;
+      background: linear-gradient(145deg, rgba(255,255,255,.95), rgba(255,244,247,.76));
+      border-bottom: 1px solid var(--line);
+    }
+
+    .simple-head .kicker {
+      color: var(--rose-700);
+      font-size: .76rem;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .simple-head h2 {
+      max-width: 760px;
+      margin: .45rem auto 0;
+      font-size: clamp(2rem, 6vw, 4rem);
+      line-height: 1.08;
+      letter-spacing: -.045em;
+      font-weight: 600;
+    }
+
+    .updating-card {
+      min-height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .65rem;
+      color: var(--muted);
+      font-weight: 600;
+      text-transform: lowercase;
+    }
+
+    .updating-dot {
+      width: .55rem;
+      height: .55rem;
+      border-radius: 50%;
+      background: var(--rose-400);
+      box-shadow: 0 0 0 .35rem rgba(217,126,155,.12);
+    }
+
+    .personal-intro {
+      width: min(var(--article), calc(100% - 2.2rem));
+      margin: 0 auto;
+      padding: 2.8rem 0 .4rem;
+    }
+
+    .fan-highlight {
+      margin: 0 0 1rem;
+      padding: 1.2rem 1.3rem;
+      border-left: 3px solid var(--rose-400);
+      border-radius: 0 18px 18px 0;
+      background: var(--surface-soft);
+      color: var(--rose-700);
+      font-size: 1.02rem;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    .essay {
+      width: min(var(--article), calc(100% - 2.2rem));
+      margin: 0 auto;
+      padding: 2rem 0 4.5rem;
+      color: #553f48;
+      text-align: justify;
+      text-justify: inter-word;
+      hyphens: auto;
+    }
+
+    .essay p {
+      margin: 0 0 1rem;
+    }
+
+    .essay p:last-child {
+      margin-bottom: 0;
+    }
+
+    .essay .word-blank {
+      margin: 0;
+      min-height: 1rem;
+    }
+
+    .essay strong {
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .essay em {
+      font-style: italic;
+    }
+
+    @media (max-width: 760px) {
+      .four-tabs {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .top-photo {
+        width: min(420px, calc(100% - .5rem));
+      }
+
+      .simple-head h2 {
+        font-size: clamp(1.7rem, 8vw, 2.6rem);
+      }
+    }
+
+  
+    /* Final layout adjustments */
+    html {
+      scroll-behavior: auto;
+    }
+
+    body {
+      font-size: 18px;
+    }
+
+    .hero {
+      width: min(var(--content), calc(100% - 2rem));
+      margin: 0 auto;
+      padding: clamp(2.8rem, 6vw, 5rem) 0 2.2rem;
+      text-align: left;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(180px, 280px) minmax(0, 1fr);
+      gap: clamp(2rem, 5vw, 4.5rem);
+      align-items: center;
+    }
+
+    .hero-copy {
+      min-width: 0;
+    }
+
+    .hero .eyebrow,
+    .hero h1,
+    .hero .subtitle {
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    .hero h1 {
+      margin-top: .6rem;
+      font-size: clamp(3rem, 7vw, 6.2rem);
+    }
+
+    .hero .subtitle {
+      max-width: none;
+      margin: 1.2rem 0 0;
+      font-size: 1.12rem;
+      line-height: 1.75;
+    }
+
+    .top-photo {
+      width: 100%;
+      max-width: 280px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .top-photo img {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      max-height: 360px;
+      object-fit: cover;
+      border-radius: 22px;
+    }
+
+    .mag-tabs {
+      position: static;
+      top: auto;
+    }
+
+    .mag-tab,
+    .mag-tab:hover,
+    .mag-tab:focus,
+    .mag-tab:active {
+      transform: none !important;
+      transition: none !important;
+    }
+
+    .mag-tab {
+      scroll-behavior: auto;
+    }
+
+    .mag-head,
+    .simple-head,
+    .article-title,
+    .coming-soon {
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    .mag-head h2,
+    .mag-head .kicker,
+    .mag-head .date,
+    .simple-head h2,
+    .simple-head .kicker,
+    .article-title h3,
+    .article-title .article-label {
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    .question,
+    .answer,
+    .essay,
+    .essay p,
+    .fan-highlight,
+    .subtitle,
+    .updating-card,
+    footer,
+    .mag-tab {
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    .answer,
+    .essay {
+      font-size: 18px;
+      line-height: 1.82;
+    }
+
+    .question {
+      font-size: 1.18rem;
+      line-height: 1.62;
+    }
+
+    .essay strong {
+      font-size: inherit;
+    }
+
+    @media (max-width: 760px) {
+      .hero-grid {
+        grid-template-columns: 110px minmax(0, 1fr);
+        gap: 1.15rem;
+        align-items: start;
+      }
+
+      .top-photo {
+        max-width: 110px;
+      }
+
+      .top-photo img {
+        max-height: 145px;
+        border-radius: 16px;
+      }
+
+      .hero {
+        padding-top: 2.3rem;
+      }
+
+      .hero h1 {
+        font-size: clamp(2.15rem, 10vw, 3.4rem);
+        line-height: 1;
+      }
+
+      .hero .subtitle {
+        font-size: 1rem;
+        line-height: 1.65;
+      }
+
+      .answer,
+      .essay {
+        font-size: 17px;
+      }
+
+      .question {
+        font-size: 1.08rem;
+      }
+    }
+
+  
+    /* Keep main title and navigation centered */
+    .hero-copy {
+      text-align: center;
+    }
+
+    .hero .eyebrow,
+    .hero h1,
+    .hero .subtitle {
+      text-align: center !important;
+      text-justify: auto !important;
+    }
+
+    .hero h1 {
+      font-size: clamp(3.8rem, 8vw, 7rem);
+    }
+
+    .mag-tab {
+      text-align: center !important;
+      text-justify: auto !important;
+    }
+
+    .mag-tabs-inner {
+      justify-items: stretch;
+    }
+
+    .mag-head,
+    .simple-head,
+    .article-title {
+      text-align: center !important;
+      text-justify: auto !important;
+    }
+
+    .mag-head h2,
+    .mag-head .kicker,
+    .mag-head .date,
+    .simple-head h2,
+    .simple-head .kicker,
+    .article-title h3,
+    .article-title .article-label {
+      text-align: center !important;
+      text-justify: auto !important;
+    }
+
+    /* Article content stays justified */
+    .question,
+    .answer,
+    .essay,
+    .essay p,
+    .fan-highlight {
+      text-align: justify !important;
+      text-justify: inter-word !important;
+    }
+
+    @media (max-width: 760px) {
+      .hero h1 {
+        font-size: clamp(2.5rem, 11vw, 4rem);
+      }
+    }
+
   </style>
 </head>
 
 <body>
+  
+  <header class="hero">
+    <div class="hero-grid">
+      <figure class="top-photo">
+        <!-- Chỉ thay link ảnh tại src bên dưới -->
+      <img src="./008H1KPAgy1igt0n5ldiij31jk2bde81.jpg" alt="Park Si Woo">
+      </figure>
 
-  <!-- ================================
-       HEADER
-  ================================= -->
-
-  <header class="topbar">
-    <a href="#" class="brand">
-      Marie Claire
-    </a>
-
-    <div class="issue">
-      October 2026
+      <div class="hero-copy">
+        <div class="eyebrow">Park Si Woo · Magazine Archive</div>
+        <h1>PARK SI WOO</h1>
+        <p class="subtitle">Một góc nhỏ để lưu và đọc lại các bài phỏng vấn, tạp chí, livestream của Park Si Woo.</p>
+      </div>
     </div>
   </header>
 
-
-  <!-- ================================
-       HERO
-  ================================= -->
-
-  <section class="hero">
-    <div class="hero-content">
-
-      <div class="hero-kicker">
-        Interview / Actor
-      </div>
-
-      <h1>
-        Park<br>
-        <em>Si Woo</em>
-      </h1>
-
-      <div class="hero-bottom">
-        <span>Marie Claire · October 2026</span>
-        <span>On challenge, acting &amp; INUFF</span>
-      </div>
-
+  <nav class="mag-tabs" aria-label="Nội dung">
+    <div class="mag-tabs-inner four-tabs">
+      <a class="mag-tab" href="#cosmopolitan">Cosmopolitan Men</a>
+      <a class="mag-tab" href="#marie-claire">Marie Claire</a>
+      <a class="mag-tab" href="#livestream">Livestream</a>
+      <a class="mag-tab" href="#goc-nhin-ca-nhan">Góc nhìn Cá nhân</a>
     </div>
-  </section>
+  </nav>
 
+<main>
 
-  <main>
-
-    <!-- ================================
-         INTRO
-    ================================= -->
-
-    <section class="intro">
-
-      <div class="intro-label">
-        The Interview
+    <section class="mag-section cosmo" id="cosmopolitan">
+      <header class="mag-head">
+        <div class="kicker">Interview</div>
+        <h2>Cosmopolitan Men</h2>
+        <div class="date">Park Si Woo</div>
+      </header>
+<div class="article-title">
+        <p class="article-label">Cosmopolitan Men</p>
+        <h3>Lý do Park Si-woo không ngại những thử thách mới</h3>
       </div>
 
-      <div class="intro-text">
-        Không biết trước đáp án mới khiến con đường trở nên
-        <span>thú vị.</span>
-        Với Park Si Woo, thử thách không phải điều để né tránh,
-        mà là cách anh tiếp tục tiến về phía trước.
-      </div>
+      <article class="article">
+        
+        <section class="qa">
+          <h3 class="question">Buổi chụp hình hôm nay cùng &lt;Cosmopolitan Men&gt; thế nào? Nghe nói đây là lần đầu tiên bạn thực hiện bộ ảnh cho một tạp chí trong nước.</h3>
+          <div class="answer">
+            <p>Mình đã rất muốn được chụp hình cho một tạp chí trong nước. Vì lần đầu tiên ấy lại là cùng &lt;Cosmopolitan Men&gt;, nên từ mấy ngày trước mình đã thấy háo hức rồi. Đến khi thực sự bắt đầu chụp thì vui đến mức cuốn theo guồng công việc, thậm chí chẳng còn biết mình có đang tạo dáng tốt hay không nữa. Thành phẩm cũng khiến mình rất hài lòng.</p><p>Gần đây, mình bất ngờ nhận được rất nhiều tình cảm từ mọi người, rồi quay quảng cáo, chụp hình, tổ chức fan meeting… nên mỗi ngày đều trôi qua rất hạnh phúc. Lịch trình dày đặc khiến mình khá bận rộn, nhưng mình lại thích cảm giác bận rộn như thế. Thật ra đâu ai biết quãng thời gian này sẽ kéo dài đến bao giờ. Vì vậy, nếu muốn tình cảm mà mình đang nhận được có thể tiếp tục thật lâu, mình nghĩ bản thân càng phải nỗ lực nhiều hơn nữa.</p>
+          </div>
+        </section>
+    
+        <section class="qa">
+          <h3 class="question">Cũng nhờ vậy mà ngày càng có nhiều người biết đến cái tên Park Si-woo. Có khoảnh khắc nào khiến bạn thực sự cảm nhận được độ nổi tiếng của mình không?</h3>
+          <div class="answer">
+            <p>Buổi livestream sinh nhật của mình vào ngày 5 tháng 2 năm nay chỉ có 14 người xem thôi. Thế mà trong một buổi livestream gần đây, có khoảng 10.000 người cùng vào xem. Nhìn con số ấy, mình mới nghĩ: “À, hóa ra thực sự có rất nhiều người đang quan tâm đến mình.”</p>
+          </div>
+        </section>
+    
+        <section class="qa">
+          <h3 class="question">Số thư hâm mộ mà bạn nhận được ở Thượng Hải?</h3>
+          <div class="answer">
+            <p>Mọi chuyện bắt đầu từ việc mình nói rằng mình muốn nhận thư của fan. Nhưng mình thật sự không ngờ mọi người lại gửi nhiều đến thế. Mình đã đọc suốt ba ngày liền, ngày nào cũng tới tận khuya. Có rất nhiều fan nước ngoài nhưng vẫn tự tay viết thư bằng tiếng Hàn cho mình. Đến giờ thư vẫn tiếp tục được gửi tới, và trong từng lá thư mình đều cảm nhận được sự chân thành của mọi người, nên thực sự rất xúc động.</p>
+          </div>
+        </section>
+    
+        <section class="qa">
+          <h3 class="question">Đây là lần đầu tiên bạn thử sức với thể loại BL. Khi nhận được lời mời tham gia, bạn có từng do dự không?</h3>
+          <div class="answer">
+            <p>Ngay từ khi quyết định chọn nghề diễn viên, mình đã không nghĩ rằng bản thân cần phải phân chia hay giới hạn mình theo từng thể loại. Nguyên tác vốn cũng là một tác phẩm nhận được rất nhiều tình cảm, hơn nữa cách kết hợp giữa yếu tố điều tra phá án và BL cũng rất thú vị, nên mình nhận lời mà không phải đắn đo nhiều.</p>
+          </div>
+        </section>
+    
+        <section class="qa">
+          <h3 class="question">Sự ăn ý giữa bạn và bạn diễn Kim Yoon-sik cũng trở thành đề tài được quan tâm. Không khí giữa hai người ở trường quay ngoài đời thế nào?</h3>
+          <div class="answer">
+            <p>Bọn mình vốn nổi tiếng là rất ăn ý mà. Ngoài đời bọn mình cũng thực sự thân nhau. Sau khi phim kết thúc, vì có thêm nhiều lịch trình làm việc chung nên cả hai càng trở nên gần gũi hơn. Dạo này có cảm giác chỉ cần nhìn vào mắt nhau thôi là đã biết đối phương muốn gì rồi, thoải mái với nhau đến mức ấy.</p>
+          </div>
+        </section>
+<section class="qa">
+          <h3 class="question">Sau khi hoàn tất quá trình quay, có khoảnh khắc nào đặc biệt khiến bạn vẫn nhớ mãi không?</h3>
+          <div class="answer">
+            <p>Ngày quay đầu tiên đúng vào sinh nhật mình. Một trong những điều nằm trong “bucket list” của mình là “được đón sinh nhật ngay tại trường quay”. Thế nhưng hôm đó, đến tận gần sáng mà chẳng có ai chúc mừng nên mình cũng hơi chạnh lòng. Sau này mới biết mọi người đang âm thầm chuẩn bị một màn bất ngờ cho mình. Việc một điều mình luôn rất muốn trải nghiệm lại trở thành hiện thực ngay trong ngày quay đầu tiên khiến mình vui vô cùng.</p>
+          </div>
+        </section>
+    
+        <section class="qa">
+          <h3 class="question">Hiện tại bạn hoạt động với tư cách diễn viên, nhưng điểm khởi đầu lại là một idol trong nhóm BLANK2Y. Điều gì đã khiến bạn lần đầu nuôi ước mơ trở thành idol?</h3>
+          <div class="answer">
+            <p>Từ nhỏ mình đã rất thích được mọi người chú ý. Mình cũng thích nhảy nữa. Mỗi khi xem TV, mình thường nghĩ khá đơn giản rằng: “Dù thế nào mình cũng nhất định phải khiến mọi người biết đến tên mình.” Khi đó mình sống ở Mungyeong, tỉnh Gyeongsangbuk-do, nhưng vì muốn được học nhảy một cách bài bản nên mình đã lên Seoul.</p>
+          </div>
+        </section>
+    
+        <section class="qa">
+          <h3 class="question">Nghe nói dù bố mẹ phản đối, bạn vẫn thu dọn hành lý rồi lên Seoul?</h3>
+          <div class="answer">
+            <p>Ở nơi mình sống khi ấy không có học viện dạy nhảy. Ban đầu bố mẹ phản đối, nhưng vì quá muốn thực hiện ước mơ nên mình cứ quyết định làm trước đã. Có lẽ từ nhỏ mình đã không phải kiểu người sợ bắt đầu những thử thách mới. Một phần cũng vì bố mẹ nuôi dạy mình khá tự do.</p><p>Họ gần như không bao giờ cằn nhằn kiểu “phải học đi”. Quan điểm của bố mẹ là: con có thể tự lựa chọn, nhưng đồng thời cũng phải tự chịu trách nhiệm cho kết quả của lựa chọn đó.</p>
+          </div>
+        </section>
+    
+        <section class="qa">
+          <h3 class="question">Chắc hẳn quãng thời gian hoạt động idol cũng dạy cho bạn rất nhiều điều?</h3>
+          <div class="answer">
+            <p>Điều đầu tiên mình nghĩ tới là “biết chờ đợi” và “sự kiên nhẫn”. Bởi mình phải liên tục tập luyện trong khi chờ đợi một ngày debut mà chẳng biết chính xác khi nào mới đến.</p><p>Chín người bọn mình sống cùng nhau trong ký túc xá, có lúc cãi nhau, rồi lại cùng nhau giải quyết vấn đề. Qua đó, mình học được rất nhiều từ cả các anh lẫn các em trong nhóm.</p><p>Vốn dĩ mình là người khá dễ cảm thấy cô đơn, nên thay vì sống một mình, mình lại thấy cảnh chín người chen chúc, ồn ào sống cùng nhau thú vị hơn. Có lẽ chính những trải nghiệm ấy cũng giúp mình học được nhiều điều về cách hòa nhập và ứng xử trong xã hội.</p>
+          </div>
+        </section>
+    
+        <section class="qa">
+          <h3 class="question">Điều gì khiến bạn có thêm một ước mơ mới là trở thành diễn viên?</h3>
+          <div class="answer">
+            <p>Ngay cả khi còn hoạt động với tư cách idol, mình cũng rất thích ở nhà xem phim truyền hình. Có lúc mình còn đứng một mình trước gương rồi diễn theo lời thoại trong phim.</p><p>Cứ như vậy, mình dần nghĩ: “Diễn xuất thú vị thật. Mình cũng muốn thử làm một cách nghiêm túc.” Mình còn nghĩ tài năng này mà chỉ để mình xem thì hơi phí.</p>
+          </div>
+        </section>
+    
+        <section class="qa">
+          <h3 class="question">Có tác phẩm nào bạn đặc biệt yêu thích không?</h3>
+          <div class="answer">
+            <p>Mình rất thích bộ phim truyền hình &lt;Penthouse&gt;. Từ mùa 1 đến mùa 3, mình không bỏ sót bất kỳ tập phát sóng nào, đều xem ngay khi phim lên sóng. Mình cũng thường một mình diễn lại lời thoại của các diễn viên trong phim.</p><p>Ngoài ra, mình cũng rất thích &lt;God’s Gift: 14 Days&gt;. Diễn xuất của tiền bối Lee Bo-young và Jo Seung-woo thực sự xuất sắc, câu chuyện cũng rất cuốn hút, vậy mà có vẻ bộ phim lại không được nhiều người biết tới như mình tưởng. Mình thực sự muốn giới thiệu mọi người hãy xem thử ít nhất một lần.</p>
+          </div>
+        </section>
+<section class="qa">
+          <h3 class="question">Từ idol đến diễn viên, cho tới nay bạn đã nhiều lần bắt đầu lại với những thử thách mới. Bạn vốn không phải người dễ cảm thấy sợ hãi trước những lựa chọn sao?</h3>
+          <div class="answer">
+            <p>Đúng vậy. Mình gần như không quá sợ bất cứ chuyện gì. Mình cũng thích thử những điều mới.</p><p>Mình luôn có suy nghĩ rất mạnh rằng: “Thay vì tốn thời gian đắn đo, cứ làm trước đã.” Việc hồi nhỏ đột nhiên thu dọn hành lý rồi lên Seoul cũng vậy, và nhìn lại thì phần lớn những lựa chọn của mình từ trước tới giờ đều được thực hiện theo cách như thế.</p>
+          </div>
+        </section>
+    
+        <section class="qa">
+          <h3 class="question">Khi đưa ra những lựa chọn đó, Park Si-woo có tiêu chuẩn riêng nào không?</h3>
+          <div class="answer">
+            <p>Dù lựa chọn điều gì thì vẫn có khả năng sẽ hối hận, đúng không? Nếu mình cảm thấy bản thân có thể chịu trách nhiệm được cho cả sự hối hận ấy, mình thường sẽ lựa chọn.</p><p>Mình sẽ nghĩ xem bản thân có đủ quyết tâm để chấp nhận cả kết quả trong trường hợp mọi chuyện không diễn ra tốt đẹp hay không.</p><p>Dạo gần đây, trước khi đưa ra quyết định, mình còn cố chuẩn bị cả phương án A, B và C để đề phòng trường hợp mọi việc không suôn sẻ. Vấn đề là mình vẫn chưa chuẩn bị tới phương án D.</p>
+          </div>
+        </section>
+    
+        <section class="qa">
+          <h3 class="question">Nhưng không phải lựa chọn nào cũng dẫn đến kết quả như mong muốn. Khi gặp thất bại hoặc phải trải qua những lần thử-sai, bạn vượt qua bằng cách nào?</h3>
+          <div class="answer">
+            <p>Mình là người có tham vọng khá lớn, và một khi đã đặt ra mục tiêu thì nhất định muốn đạt được nó.</p><p>Ngay cả trong những lúc mọi việc không thuận lợi, chỉ cần nhớ lại mục tiêu mình muốn chinh phục, suy nghĩ của mình sẽ nhanh chóng thay đổi.</p><p>Mình cũng không phải kiểu người mỗi khi dao động sẽ tự nói với bản thân một câu gì đó đặc biệt để động viên mình. Thay vì dành thời gian nghĩ xem nên nói gì với bản thân, mình thà hành động luôn còn hơn.</p><p>Thậm chí có những lúc cảm thấy mình đang yếu lòng, mình lại cố tình nhận thêm một việc nữa để làm.</p>
+          </div>
+        </section>
+    
+        <section class="qa">
+          <h3 class="question">Trong công việc bạn là người có khả năng thúc đẩy mọi thứ rất mạnh mẽ. Gần đây có điều gì khiến bạn đặc biệt say mê không?</h3>
+          <div class="answer">
+            <p>Dạo này mình rất mê trang trí nội thất. Có khi vừa sửa sang cả căn nhà xong, hai tuần sau mình lại chán rồi thay đổi lại lần nữa.</p><p>Mình cũng thích tự mình đi tìm mua đồ rồi tự tay trang trí. Quá trình tạo nên một không gian giống như “căn cứ bí mật” của riêng mình giúp mình giải tỏa rất nhiều căng thẳng.</p>
+          </div>
+        </section>
+    
+        <section class="qa">
+          <h3 class="question">Có khía cạnh bất ngờ nào của Park Si-woo mà người hâm mộ vẫn chưa biết rõ không?</h3>
+          <div class="answer">
+            <p>Các fan thường nhìn mình như một người cực kỳ “T”, nghĩ gì nói nấy, có gì cũng nói thẳng. Nhưng thực ra mình cũng có mặt khá nhạy cảm và mềm lòng hơn mọi người tưởng.</p><p>Bên ngoài mình không hay thể hiện ra, nhưng ngay cả với những chuyện nhỏ, thay vì bỏ qua, mình thường tự mình suy nghĩ rất lâu và nghiền ngẫm đi nghiền ngẫm lại. Có lẽ đây là một mặt mà các fan chưa biết nhiều về mình.</p>
+          </div>
+        </section>
+    
+        <section class="qa">
+          <h3 class="question">Khi trong lòng rối bời, bạn thường giải tỏa bằng cách nào?</h3>
+          <div class="answer">
+            <p>Mình lại có xu hướng đào sâu vào vấn đề hơn nữa. Mình sẽ xem lại phần ghi hình nhiều hơn, tiếp tục phân tích xem rốt cuộc vấn đề nằm ở đâu.</p><p>Rồi sau đó mình đi ăn naengmyeon  mì lạnh. Dạo này chắc mình ăn khoảng năm lần một tuần. Mình là kiểu hễ mê món gì thì sẽ ăn cho tới khi chán mới thôi.</p><p>Ăn mì lạnh với uống nước ép dưa hấu là tâm trạng mình sẽ khá lên một chút.</p>
+          </div>
+        </section>
+<section class="qa">
+          <h3 class="question">Gần đây, điều nhỏ bé nào khiến Park Si-woo cảm thấy vui nhất?</h3>
+          <div class="answer">
+            <p>Là mở ứng dụng giao lưu với fan ra xem. Ngay cả khi đang mệt mỏi, chỉ cần đọc những tin nhắn fan gửi tới là mình lại có sức để tiếp tục làm việc. Mình đọc tin nhắn của người hâm mộ, lấy lại động lực rồi lại cố gắng hết sức… Dường như một ngày của mình cứ vận hành theo vòng tuần hoàn như vậy.</p>
+          </div>
+        </section>
+    
+        <section class="qa">
+          <h3 class="question">Nghe nói bạn cũng rất thích biệt danh “845” mà các fan đặt cho mình?</h3>
+          <div class="answer">
+            <p>Mình thích lắm. Đây là biệt danh thể hiện tên của mình thông qua cách đọc các con số trong tiếng Trung. Trong suốt thời gian hoạt động trong ngành giải trí, đây là lần đầu tiên mình có một biệt danh rõ ràng và đặc trưng đến thế.</p><p>Bây giờ đến bố mẹ mình cũng gọi mình là “845” rồi.</p><p>Mình thấy vừa thú vị vừa vui khi mình có một cách gọi đặc trưng đến mức chỉ cần ai đó nghĩ tới mình là có thể lập tức liên tưởng tới nó.</p>
+          </div>
+        </section>
+    
+        <section class="qa">
+          <h3 class="question">Trong tương lai, có thể loại hoặc dạng nhân vật nào bạn nhất định muốn thử sức không?</h3>
+          <div class="answer">
+            <p>Thật ra có rất nhiều vai mà mình muốn thử.</p><p>Nếu chỉ được chọn một, mình muốn đóng phim hài lãng mạn. Một nhân vật tươi sáng, vui nhộn cũng rất thú vị, hoặc một vai có thể cho mình thể hiện sức hút hoàn toàn khác so với trước đây, chẳng hạn hình tượng “chàng trai kém tuổi” trong chuyện tình cảm, chắc cũng sẽ rất hay.</p>
+          </div>
+        </section>
+    
+        <section class="qa">
+          <h3 class="question">Bạn mới chỉ vừa bắt đầu định hình hình ảnh của mình với tư cách diễn viên. Sau này bạn muốn trở thành một diễn viên như thế nào?</h3>
+          <div class="answer">
+            <p>Mình mong năng lực của mình sẽ ngày càng tiến bộ, nhưng đồng thời không đánh mất tâm thế mà mình đang có ở hiện tại.</p><p>Vì đột nhiên nhận được quá nhiều tình cảm, có những người lo rằng mình sẽ thay đổi. Nhưng càng như vậy, mình càng cố gắng không quên con người của mình trong quá khứ.</p><p>Với tư cách diễn viên, mình muốn trong mỗi tác phẩm đều có thể cho mọi người thấy một diện mạo mới.</p><p>Ngay cả với tác phẩm lần này, bản thân mình vẫn thấy còn rất nhiều điều đáng tiếc, vì vậy mình muốn tiếp nhận những phản hồi một cách thật tỉnh táo và nghiêm khắc. Điều gì cần sửa thì sửa, tiếp tục luyện tập nhiều hơn, để trở thành một diễn viên khiến mọi người luôn tò mò không biết lần tới mình sẽ mang đến một hình ảnh như thế nào.</p>
+          </div>
+        </section>
+    
+        <section class="qa">
+          <h3 class="question">Bạn có hình mẫu nào trong nghề không?</h3>
+          <div class="answer">
+            <p>Thật ra mình không xác định một người cụ thể làm hình mẫu của mình. Mình sợ rằng nếu làm vậy, bản thân sẽ vô thức bắt đầu đi theo hình ảnh của người đó.</p><p>Tuy nhiên, nếu phải chọn một diễn viên mà gần đây mình yêu thích và muốn học hỏi, thì đó là tiền bối Byeon Woo-seok.</p><p>Phong cách thời trang đời thường của anh ấy rất tuyệt, và trong mỗi tác phẩm anh ấy lại thể hiện một sức hút hoàn toàn khác. Mình cũng muốn học hỏi được những điều như vậy.</p>
+          </div>
+        </section>
+    
+        <section class="qa">
+          <h3 class="question">Cuối cùng, theo Park Si-woo, một “người đàn ông tuyệt vời” là người như thế nào?</h3>
+          <div class="answer">
+            <p>Là một người đàn ông không khiến người mình yêu phải khóc.</p><p>Và mình nghĩ một người có thể chịu trách nhiệm với chính những lời mình đã nói ra mới thực sự là một người đàn ông đáng ngưỡng mộ.</p>
+          </div>
+        </section>
+    
+      </article>
+    </section>
 
+    <section class="mag-section marie" id="marie-claire">
+      <header class="mag-head">
+        <div class="kicker">Interview</div>
+        <h2>Marie Claire</h2>
+        <div class="date">October 2026 · Park Si Woo</div>
+      </header>
+<article class="article">
+        
+        <section class="qa">
+          <h3 class="question">Hôm nay trước khi chụp, cũng có lúc bạn phồng má lên đúng không? Nghe nói phồng má là một trong những thói quen của bạn trước khi bắt đầu quay hoặc chụp.</h3>
+          <div class="answer"><p>Trước buổi quay đầu tiên mình lúc nào cũng căng thẳng, và cứ mỗi lần như vậy, chẳng biết từ lúc nào mình lại vô thức phồng má lên. Có lẽ đó là một hành động vô thức để điều hòa lại nhịp thở.</p><p>Cũng có thể xem như một thói quen trước khi mình tập trung vào công việc.</p></div>
+        </section>
+    
+        <section class="qa">
+          <h3 class="question">Có lẽ đó cũng là cách giúp bạn giải tỏa căng thẳng khi luôn phải đối diện với những môi trường mới.</h3>
+          <div class="answer"><p>Trước đây mình rất dễ căng thẳng, nhưng dạo gần đây có vẻ mình đang dần học được cách tận hưởng mọi thứ.</p><p>Khi nghĩ rằng từng trải nghiệm mình đang có hôm nay chưa chắc sau này sẽ có cơ hội được trải qua lần nữa, mình thấy chúng trở nên quý giá hơn và cũng muốn tận hưởng chúng thật trọn vẹn.</p><p>Như buổi chụp hình cho &lt;Marie Claire&gt; hôm nay chẳng hạn, đâu phải cứ muốn là sẽ có cơ hội được trải nghiệm những điều như thế này. Vì vậy mình cố gắng nghĩ theo hướng đó và tận hưởng mọi thứ.</p></div>
+        </section>
+    
+        <section class="qa">
+          <h3 class="question">Nếu nhớ lại ngày quay đầu tiên của bộ phim truyền hình đầu tiên trong sự nghiệp, cảm xúc nào hiện lên rõ nhất trong bạn?</h3>
+          <div class="answer"><p>Đó là tác phẩm đầu tiên mình đảm nhận sau khi chuyển từ idol sang diễn viên, hơn nữa mình lại nhận được một cơ hội vô cùng lớn khi đảm nhận vai chính.</p><p>Cho tới tận trước ngày chính thức bước vào quay, hình như ngày nào mình cũng nghĩ: “Mình thật sự sắp làm chuyện này sao?”</p><p>Mình lo lắng rất nhiều. Đương nhiên lúc đó mình hoàn toàn không thể tận hưởng quá trình ấy.</p><p>Có lẽ cho đến tận cảnh quay cuối cùng, mình vẫn không thể buông được cảm giác lo lắng và căng thẳng. Chính vì vậy mà sau này nhìn lại, mình thấy có rất nhiều điều còn đáng tiếc.</p><p>Bây giờ nghĩ lại, mình cũng tự hỏi nếu khi ấy có thể thả lỏng hơn dù chỉ một chút thì có lẽ mình đã làm tốt hơn. Nhưng nếu nhìn theo hướng ngược lại, chính trải nghiệm đó đã giúp mình có được tâm thế như hiện tại.</p></div>
+        </section>
+<section class="qa">
+          <h3 class="question">Bạn có linh cảm rằng ngay từ tác phẩm đầu tay, mình sẽ nhận được nhiều sự quan tâm đến vậy không?</h3>
+          <div class="answer"><p>Khi lựa chọn làm điều gì đó, mình vốn là người khá tự tin. Vì vậy, dù không nghĩ rằng tác phẩm sẽ nhận được tình cảm lớn đến mức này, mình vẫn nghĩ ít nhất nó sẽ có thể thu hút được sự chú ý nhất định.</p><p>Nói thật thì trong lòng mình cũng có kỳ vọng ở một mức nào đó.</p><p>Nhưng kết quả lại vượt xa những gì mình từng mong đợi, mình nhận được quá nhiều tình cảm nên đến tận bây giờ vẫn còn cảm giác ngỡ ngàng. Mặt khác, mình cũng có chút sợ hãi.</p></div>
+        </section>
+    
+        <section class="qa">
+          <h3 class="question">Đó là nỗi sợ như thế nào?</h3>
+          <div class="answer"><p>Có lẽ vì ngay từ đầu mình đã nhận được rất nhiều tình cảm, nên mình càng suy nghĩ nhiều hơn về bước tiếp theo.</p><p>Bên cạnh đó cũng có những phản hồi mang tính phê bình, nên mình cảm thấy có áp lực rằng bản thân phải cải thiện thật tốt những điểm ấy rồi cho mọi người thấy sự tiến bộ.</p><p>Có người góp ý về cách phát âm của mình, vì vậy hiện tại mình đang xem lại những thói quen ngôn ngữ của bản thân và từng bước điều chỉnh chúng.</p></div>
+        </section>
+    
+        <section class="qa">
+          <h3 class="question">Từ chương trình sống còn, debut với tư cách idol cho đến chuyển hướng sang diễn xuất, mỗi chặng đường của bạn dường như đều nối tiếp bằng một thử thách mới. Bạn vốn là người không dễ chùn bước trước thử thách sao?</h3>
+          <div class="answer"><p>Mình nghĩ đối với bất kỳ ai, bản thân cuộc sống đã là một chuỗi thử thách rồi. Chỉ là trong hành trình đó, thay vì lựa chọn sự ổn định, mình thường chọn cách trực tiếp đối diện với thử thách.</p><p>Mình tin vào câu nói rằng chỉ cần tiếp tục bước đi thì rồi sẽ có một khoảnh khắc tốt đẹp nào đó xuất hiện.</p><p>Tất nhiên cũng từng có những lúc mình muốn từ bỏ. Nhưng có lẽ nhờ cứ tiếp tục thử sức hết lần này đến lần khác mà cuối cùng mình đã gặp được một tác phẩm tuyệt vời và cũng nhận được rất nhiều tình cảm.</p></div>
+        </section>
+    
+        <section class="qa">
+          <h3 class="question">Điều gì khiến bạn cảm thấy là thử thách lớn nhất trong cuộc đời mình cho đến nay?</h3>
+          <div class="answer"><p>Gần đây mình đã thành lập công ty riêng mang tên INUFF. Có lẽ đây chính là thử thách, đồng thời cũng là cuộc phiêu lưu lớn nhất trong cuộc đời mình cho đến thời điểm hiện tại.</p></div>
+        </section>
+    
+        <section class="qa">
+          <h3 class="question">Điều gì khiến bạn nảy ra ý định thành lập một công ty giải trí?</h3>
+          <div class="answer"><p>Ngay từ khi còn nhỏ, đó đã là ước mơ cuối cùng mà mình muốn hướng tới.</p></div>
+        </section>
+<section class="qa">
+          <h3 class="question">Bạn bắt đầu có ước mơ ấy từ năm bao nhiêu tuổi?</h3>
+          <div class="answer"><p>Từ năm lớp 9.</p><p>Khi còn nhỏ, người ta thường có những ước mơ rất lớn mà. Chẳng hạn như muốn trở thành tổng thống, muốn bay vào vũ trụ… Với mình, ước mơ ấy là điều hành một công ty giải trí.</p><p>Tất nhiên ước mơ đầu tiên của mình là trở thành diễn viên. Nhưng mình không muốn chỉ dừng lại ở đó.</p><p>Ước mơ cuối cùng của mình là có thể mở ra một con đường tốt đẹp cho những người cũng mang trong mình giấc mơ giống như mình.</p></div>
+        </section>
+    
+        <section class="qa">
+          <h3 class="question">Vậy là sau khoảng 10 năm, bạn đã biến ước mơ ấy thành hiện thực. Hiện tại bạn đang tiếp tục phát triển ước mơ ấy như thế nào?</h3>
+          <div class="answer"><p>Vì thành lập công ty khi tuổi đời còn khá trẻ, nên thực tế mình nhận được nhiều ánh nhìn tiêu cực hơn là tích cực.</p><p>Mình đã nghe rất nhiều lời như: “Liều lĩnh quá”, “Chỉ tổ ném tiền qua cửa sổ thôi”, hay “Bản thân cậu còn chưa phải một nghệ sĩ thành công thì làm sao có thể điều hành một công ty giải trí được?”</p><p>Thực ra những lời đó cũng không phải hoàn toàn vô lý. Nhưng mình không dao động vì chúng.</p><p>Mình thường nói với những người ấy rằng: “Có thể mọi người thấy việc này liều lĩnh, nhưng chính vì vậy nó sẽ càng thú vị hơn, nên hãy cứ chờ xem.”</p><p>Mình không biết thử thách này rồi sẽ đưa mình đến một tương lai như thế nào. Nhưng dù kết quả cuối cùng là thành công hay thất bại, mình tin rằng đó vẫn sẽ là con đường giúp mình trưởng thành.</p><p>Mình muốn tự mình theo dõi xem mình có thể đi được tới đâu và muốn trải nghiệm thật trọn vẹn toàn bộ quá trình ấy.</p><p>Cụ thể hơn, mình muốn xây dựng thật tốt đội ngũ nghệ sĩ sẽ đồng hành cùng INUFF.</p><p>Đồng thời, bản thân mình cũng là một trong những diễn viên trực thuộc công ty, nên mục tiêu của mình là tiếp tục trưởng thành thật tốt và trở thành gương mặt đại diện của INUFF.</p></div>
+        </section>
+    
+        <section class="qa">
+          <h3 class="question">Bạn từng nói nghề diễn viên là “lý do mình sống”. Theo bạn, sức hấp dẫn lớn nhất của công việc này là gì?</h3>
+          <div class="answer"><p>Đây là chuyện bố mẹ kể cho mình nghe, nhưng nghe nói ngay từ tiệc thôi nôi mình đã rất thích được mọi người chú ý rồi.</p><p>Ước mơ nghề nghiệp của mình cũng luôn là trở thành người nổi tiếng hoặc diễn viên.</p><p>Có lẽ vì vậy mà khi còn nhỏ, lúc mình nói muốn một mình lên Seoul để thực hiện ước mơ, bố mẹ cũng không phản đối. Họ hoàn toàn ủng hộ ước mơ của mình.</p><p>Nghĩ lại những chuyện ấy, có lẽ mình bị công việc này thu hút một cách rất bản năng.</p><p>Mặt khác, mình cũng nghĩ chính sự bất định rằng mọi chuyện có thể thành công nhưng cũng có thể không khiến mình sống và cố gắng chăm chỉ hơn.</p><p>Vì không biết mình sẽ gặp được cơ hội nào và vào thời điểm nào, nên mình cứ không ngừng làm một điều gì đó.</p><p>Và chính những nỗ lực ấy lại giúp mình trưởng thành. Có lẽ đó cũng chính là sức hấp dẫn của nghề này.</p></div>
+        </section>
+    
+        <section class="qa">
+          <h3 class="question">Vậy là thay vì một con đường an toàn với phương hướng đã được định sẵn, bạn lại có xu hướng lựa chọn một con đường dù bất định nhưng thú vị hơn.</h3>
+          <div class="answer"><p>Nếu biết sẵn đáp án thì đâu còn thú vị nữa. Mình nghĩ cũng có những điều chính vì không biết trước nên mới càng hấp dẫn.</p><p>Nếu có một mong ước, mình hy vọng con đường ấy sẽ kéo dài thật, thật lâu.</p><p>Mình nghĩ duy trì được một sự nghiệp lâu dài còn khó hơn cả việc đạt được thành công.</p><p>Muốn làm được như vậy, mình phải liên tục nhận được tình cảm của công chúng, đồng thời cũng phải trở thành một diễn viên khiến các biên kịch và đạo diễn luôn muốn tiếp tục hợp tác.</p><p>Vì vậy, thay vì nghĩ mình nhất định phải đóng một tác phẩm nào đó hay phải giành được một giải thưởng nào đó, điều mình mong muốn hơn cả là đến tận năm 80, 90 tuổi vẫn có thể sống với tư cách một diễn viên.</p></div>
+        </section>
+<section class="qa">
+          <h3 class="question">Hiện tại bạn đang chuẩn bị cho thử thách nào tiếp theo? Điều gì bạn đang chuẩn bị đối diện dù vẫn có chút sợ hãi nhưng không hề chùn bước?</h3>
+          <div class="answer"><p>Mình đang chuẩn bị cho một tác phẩm mới, nơi mình có thể cho mọi người thấy một hình ảnh khác so với bộ phim đầu tiên.</p><p>Khi xem một tác phẩm hay, ngay cả khi đã về nhà hay sang đến ngày hôm sau, người ta vẫn tiếp tục nghĩ về nó, đúng không?</p><p>Mình muốn tiếp tục thử thách bản thân để có thể trở thành một diễn viên đủ sức để lại dư âm như thế.</p><p>Ngoài ra, mình cũng đang chuẩn bị cho một thử thách hoàn toàn mới mà trước đây chưa từng làm.</p><p>Vì vậy, hy vọng lần tới khi gặp lại &lt;Marie Claire&gt;, mình sẽ trưởng thành hơn và cũng bớt căng thẳng hơn một chút.</p></div>
+        </section>
+    
+        <section class="qa">
+          <h3 class="question">Giữa vô số thử thách ấy, tôi có cảm giác và cả một chút linh cảm rằng rồi chúng ta sẽ lại gặp nhau. Có lẽ ngày ấy sẽ đến sớm thôi nhỉ?</h3>
+          
+        </section>
+    
+      </article>
     </section>
 
 
-    <!-- ================================
-         ARTICLE — PART 1
-    ================================= -->
-
-    <article class="article">
-
-      <section class="qa">
-
-        <h2 class="question">
-          Hôm nay trước khi chụp, cũng có lúc bạn phồng má lên đúng không?
-          Nghe nói phồng má là một trong những thói quen của bạn trước khi
-          bắt đầu quay hoặc chụp.
-        </h2>
-
-        <div class="answer">
-          <p>
-            Trước buổi quay đầu tiên mình lúc nào cũng căng thẳng, và cứ mỗi
-            lần như vậy, chẳng biết từ lúc nào mình lại vô thức phồng má lên.
-            Có lẽ đó là một hành động vô thức để điều hòa lại nhịp thở.
-          </p>
-
-          <p>
-            Cũng có thể xem như một thói quen trước khi mình tập trung vào công việc.
-          </p>
-        </div>
-
-      </section>
-
-
-      <section class="qa">
-
-        <h2 class="question">
-          Có lẽ đó cũng là cách giúp bạn giải tỏa căng thẳng khi luôn phải
-          đối diện với những môi trường mới.
-        </h2>
-
-        <div class="answer">
-
-          <p>
-            Trước đây mình rất dễ căng thẳng, nhưng dạo gần đây có vẻ mình đang
-            dần học được cách tận hưởng mọi thứ.
-          </p>
-
-          <p>
-            Khi nghĩ rằng từng trải nghiệm mình đang có hôm nay chưa chắc sau này
-            sẽ có cơ hội được trải qua lần nữa, mình thấy chúng trở nên quý giá hơn
-            và cũng muốn tận hưởng chúng thật trọn vẹn.
-          </p>
-
-          <p>
-            Như buổi chụp hình cho &lt;Marie Claire&gt; hôm nay chẳng hạn,
-            đâu phải cứ muốn là sẽ có cơ hội được trải nghiệm những điều như thế này.
-            Vì vậy mình cố gắng nghĩ theo hướng đó và tận hưởng mọi thứ.
-          </p>
-
-        </div>
-
-      </section>
-
-
-      <section class="qa">
-
-        <h2 class="question">
-          Nếu nhớ lại ngày quay đầu tiên của bộ phim truyền hình đầu tiên trong
-          sự nghiệp, cảm xúc nào hiện lên rõ nhất trong bạn?
-        </h2>
-
-        <div class="answer">
-
-          <p>
-            Đó là tác phẩm đầu tiên mình đảm nhận sau khi chuyển từ idol sang
-            diễn viên, hơn nữa mình lại nhận được một cơ hội vô cùng lớn khi
-            đảm nhận vai chính.
-          </p>
-
-          <p>
-            Cho tới tận trước ngày chính thức bước vào quay, hình như ngày nào
-            mình cũng nghĩ: “Mình thật sự sắp làm chuyện này sao?”
-          </p>
-
-          <p>
-            Mình lo lắng rất nhiều. Đương nhiên lúc đó mình hoàn toàn không thể
-            tận hưởng quá trình ấy.
-          </p>
-
-          <p>
-            Có lẽ cho đến tận cảnh quay cuối cùng, mình vẫn không thể buông được
-            cảm giác lo lắng và căng thẳng. Chính vì vậy mà sau này nhìn lại,
-            mình thấy có rất nhiều điều còn đáng tiếc.
-          </p>
-
-          <p>
-            Bây giờ nghĩ lại, mình cũng tự hỏi nếu khi ấy có thể thả lỏng hơn dù
-            chỉ một chút thì có lẽ mình đã làm tốt hơn. Nhưng nếu nhìn theo hướng
-            ngược lại, chính trải nghiệm đó đã giúp mình có được tâm thế như hiện tại.
-          </p>
-
-        </div>
-
-      </section>
-
-    </article>
-
-
-    <!-- ================================
-         IMAGE 1
-    ================================= -->
-
-    <div class="editorial-image image-one"></div>
-
-    <div class="image-caption">
-      <span>Park Si Woo</span>
-      <span>Marie Claire · October 2026</span>
-    </div>
-
-
-    <!-- ================================
-         ARTICLE — PART 2
-    ================================= -->
-
-    <article class="article">
-
-      <section class="qa">
-
-        <h2 class="question">
-          Bạn có linh cảm rằng ngay từ tác phẩm đầu tay, mình sẽ nhận được
-          nhiều sự quan tâm đến vậy không?
-        </h2>
-
-        <div class="answer">
-
-          <p>
-            Khi lựa chọn làm điều gì đó, mình vốn là người khá tự tin.
-            Vì vậy, dù không nghĩ rằng tác phẩm sẽ nhận được tình cảm lớn đến mức này,
-            mình vẫn nghĩ ít nhất nó sẽ có thể thu hút được sự chú ý nhất định.
-          </p>
-
-          <p>
-            Nói thật thì trong lòng mình cũng có kỳ vọng ở một mức nào đó.
-          </p>
-
-          <p>
-            Nhưng kết quả lại vượt xa những gì mình từng mong đợi, mình nhận được
-            quá nhiều tình cảm nên đến tận bây giờ vẫn còn cảm giác ngỡ ngàng.
-            Mặt khác, mình cũng có chút sợ hãi.
-          </p>
-
-        </div>
-
-      </section>
-
-
-      <section class="qa">
-
-        <h2 class="question">
-          Đó là nỗi sợ như thế nào?
-        </h2>
-
-        <div class="answer">
-
-          <p>
-            Có lẽ vì ngay từ đầu mình đã nhận được rất nhiều tình cảm, nên mình
-            càng suy nghĩ nhiều hơn về bước tiếp theo.
-          </p>
-
-          <p>
-            Bên cạnh đó cũng có những phản hồi mang tính phê bình, nên mình cảm thấy
-            có áp lực rằng bản thân phải cải thiện thật tốt những điểm ấy rồi cho
-            mọi người thấy sự tiến bộ.
-          </p>
-
-          <p>
-            Có người góp ý về cách phát âm của mình, vì vậy hiện tại mình đang xem
-            lại những thói quen ngôn ngữ của bản thân và từng bước điều chỉnh chúng.
-          </p>
-
-        </div>
-
-      </section>
-
-
-      <section class="qa">
-
-        <h2 class="question">
-          Từ chương trình sống còn, debut với tư cách idol cho đến chuyển hướng
-          sang diễn xuất, mỗi chặng đường của bạn dường như đều nối tiếp bằng
-          một thử thách mới. Bạn vốn là người không dễ chùn bước trước thử thách sao?
-        </h2>
-
-        <div class="answer">
-
-          <p>
-            Mình nghĩ đối với bất kỳ ai, bản thân cuộc sống đã là một chuỗi thử
-            thách rồi. Chỉ là trong hành trình đó, thay vì lựa chọn sự ổn định,
-            mình thường chọn cách trực tiếp đối diện với thử thách.
-          </p>
-
-          <p>
-            Mình tin vào câu nói rằng chỉ cần tiếp tục bước đi thì rồi sẽ có
-            một khoảnh khắc tốt đẹp nào đó xuất hiện.
-          </p>
-
-          <p>
-            Tất nhiên cũng từng có những lúc mình muốn từ bỏ. Nhưng có lẽ nhờ
-            cứ tiếp tục thử sức hết lần này đến lần khác mà cuối cùng mình đã gặp
-            được một tác phẩm tuyệt vời và cũng nhận được rất nhiều tình cảm.
-          </p>
-
-        </div>
-
-      </section>
-
-    </article>
-
-
-    <!-- ================================
-         QUOTE
-    ================================= -->
-
-    <section class="quote-section">
-
-      <div class="quote-wrap">
-
-        <div class="quote-mark">
-          “
-        </div>
-
-        <blockquote>
-          Chỉ cần tiếp tục bước đi thì rồi sẽ có một khoảnh khắc tốt đẹp nào đó xuất hiện.
-        </blockquote>
-
-        <div class="quote-credit">
-          Park Si Woo · Marie Claire 10/2026
-        </div>
-
+    <section class="mag-section simple-section" id="livestream">
+      <header class="simple-head">
+        <div class="kicker">Archive</div>
+        <h2>Livestream</h2>
+      </header>
+      <div class="updating-card">
+        <span class="updating-dot" aria-hidden="true"></span>
+        <p>Updating</p>
       </div>
-
     </section>
 
 
-    <!-- ================================
-         INUFF
-    ================================= -->
-
-    <section class="company-title">
-
-      <small>
-        The next chapter
-      </small>
-
-      <h2>
-        INUFF
-      </h2>
-
-    </section>
-
-
-    <article class="article">
-
-      <section class="qa">
-
-        <h2 class="question">
-          Điều gì khiến bạn cảm thấy là thử thách lớn nhất trong cuộc đời mình
-          cho đến nay?
-        </h2>
-
-        <div class="answer">
-          <p>
-            Gần đây mình đã thành lập công ty riêng mang tên INUFF.
-            Có lẽ đây chính là thử thách, đồng thời cũng là cuộc phiêu lưu lớn nhất
-            trong cuộc đời mình cho đến thời điểm hiện tại.
-          </p>
-        </div>
-
-      </section>
-
-
-      <section class="qa">
-
-        <h2 class="question">
-          Điều gì khiến bạn nảy ra ý định thành lập một công ty giải trí?
-        </h2>
-
-        <div class="answer">
-          <p>
-            Ngay từ khi còn nhỏ, đó đã là ước mơ cuối cùng mà mình muốn hướng tới.
-          </p>
-        </div>
-
-      </section>
-
-
-      <section class="qa">
-
-        <h2 class="question">
-          Bạn bắt đầu có ước mơ ấy từ năm bao nhiêu tuổi?
-        </h2>
-
-        <div class="answer">
-
-          <p>
-            Từ năm lớp 9.
-          </p>
-
-          <p>
-            Khi còn nhỏ, người ta thường có những ước mơ rất lớn mà.
-            Chẳng hạn như muốn trở thành tổng thống, muốn bay vào vũ trụ…
-            Với mình, ước mơ ấy là điều hành một công ty giải trí.
-          </p>
-
-          <p>
-            Tất nhiên ước mơ đầu tiên của mình là trở thành diễn viên.
-            Nhưng mình không muốn chỉ dừng lại ở đó.
-          </p>
-
-          <p>
-            Ước mơ cuối cùng của mình là có thể mở ra một con đường tốt đẹp
-            cho những người cũng mang trong mình giấc mơ giống như mình.
-          </p>
-
-        </div>
-
-      </section>
-
-    </article>
-
-
-    <!-- ================================
-         IMAGE 2
-    ================================= -->
-
-    <div class="editorial-image image-two"></div>
-
-    <div class="image-caption">
-      <span>Dream / Challenge / Growth</span>
-      <span>October 2026</span>
-    </div>
-
-
-    <!-- ================================
-         ARTICLE — INUFF
-    ================================= -->
-
-    <article class="article">
-
-      <section class="qa">
-
-        <h2 class="question">
-          Vậy là sau khoảng 10 năm, bạn đã biến ước mơ ấy thành hiện thực.
-          Hiện tại bạn đang tiếp tục phát triển ước mơ ấy như thế nào?
-        </h2>
-
-        <div class="answer">
-
-          <p>
-            Vì thành lập công ty khi tuổi đời còn khá trẻ, nên thực tế mình nhận
-            được nhiều ánh nhìn tiêu cực hơn là tích cực.
-          </p>
-
-          <p>
-            Mình đã nghe rất nhiều lời như: “Liều lĩnh quá”, “Chỉ tổ ném tiền qua
-            cửa sổ thôi”, hay “Bản thân cậu còn chưa phải một nghệ sĩ thành công thì
-            làm sao có thể điều hành một công ty giải trí được?”
-          </p>
-
-          <p>
-            Thực ra những lời đó cũng không phải hoàn toàn vô lý.
-            Nhưng mình không dao động vì chúng.
-          </p>
-
-          <p>
-            Mình thường nói với những người ấy rằng:
-            “Có thể mọi người thấy việc này liều lĩnh, nhưng chính vì vậy nó sẽ
-            càng thú vị hơn, nên hãy cứ chờ xem.”
-          </p>
-
-          <p>
-            Mình không biết thử thách này rồi sẽ đưa mình đến một tương lai như
-            thế nào. Nhưng dù kết quả cuối cùng là thành công hay thất bại,
-            mình tin rằng đó vẫn sẽ là con đường giúp mình trưởng thành.
-          </p>
-
-          <p>
-            Mình muốn tự mình theo dõi xem mình có thể đi được tới đâu và muốn
-            trải nghiệm thật trọn vẹn toàn bộ quá trình ấy.
-          </p>
-
-          <p>
-            Cụ thể hơn, mình muốn xây dựng thật tốt đội ngũ nghệ sĩ sẽ đồng hành
-            cùng INUFF.
-          </p>
-
-          <p>
-            Đồng thời, bản thân mình cũng là một trong những diễn viên trực thuộc
-            công ty, nên mục tiêu của mình là tiếp tục trưởng thành thật tốt và
-            trở thành gương mặt đại diện của INUFF.
-          </p>
-
-        </div>
-
-      </section>
-
-    </article>
-
-
-    <!-- ================================
-         IMAGE 3
-    ================================= -->
-
-    <div class="editorial-image image-three"></div>
-
-    <div class="image-caption">
-      <span>Actor Park Si Woo</span>
-      <span>Editorial portrait</span>
-    </div>
-
-
-    <!-- ================================
-         ACTING
-    ================================= -->
-
-    <article class="article">
-
-      <section class="qa">
-
-        <h2 class="question">
-          Bạn từng nói nghề diễn viên là “lý do mình sống”.
-          Theo bạn, sức hấp dẫn lớn nhất của công việc này là gì?
-        </h2>
-
-        <div class="answer">
-
-          <p>
-            Đây là chuyện bố mẹ kể cho mình nghe, nhưng nghe nói ngay từ tiệc
-            thôi nôi mình đã rất thích được mọi người chú ý rồi.
-          </p>
-
-          <p>
-            Ước mơ nghề nghiệp của mình cũng luôn là trở thành người nổi tiếng
-            hoặc diễn viên.
-          </p>
-
-          <p>
-            Có lẽ vì vậy mà khi còn nhỏ, lúc mình nói muốn một mình lên Seoul để
-            thực hiện ước mơ, bố mẹ cũng không phản đối.
-            Họ hoàn toàn ủng hộ ước mơ của mình.
-          </p>
-
-          <p>
-            Nghĩ lại những chuyện ấy, có lẽ mình bị công việc này thu hút một cách
-            rất bản năng.
-          </p>
-
-          <p>
-            Mặt khác, mình cũng nghĩ chính sự bất định — rằng mọi chuyện có thể
-            thành công nhưng cũng có thể không — khiến mình sống và cố gắng chăm chỉ hơn.
-          </p>
-
-          <p>
-            Vì không biết mình sẽ gặp được cơ hội nào và vào thời điểm nào,
-            nên mình cứ không ngừng làm một điều gì đó.
-          </p>
-
-          <p>
-            Và chính những nỗ lực ấy lại giúp mình trưởng thành.
-            Có lẽ đó cũng chính là sức hấp dẫn của nghề này.
-          </p>
-
-        </div>
-
-      </section>
-
-
-      <section class="qa">
-
-        <h2 class="question">
-          Vậy là thay vì một con đường an toàn với phương hướng đã được định sẵn,
-          bạn lại có xu hướng lựa chọn một con đường dù bất định nhưng thú vị hơn.
-        </h2>
-
-        <div class="answer">
-
-          <p>
-            Nếu biết sẵn đáp án thì đâu còn thú vị nữa.
-            Mình nghĩ cũng có những điều chính vì không biết trước nên mới càng hấp dẫn.
-          </p>
-
-          <p>
-            Nếu có một mong ước, mình hy vọng con đường ấy sẽ kéo dài thật,
-            thật lâu.
-          </p>
-
-          <p>
-            Mình nghĩ duy trì được một sự nghiệp lâu dài còn khó hơn cả việc
-            đạt được thành công.
-          </p>
-
-          <p>
-            Muốn làm được như vậy, mình phải liên tục nhận được tình cảm của
-            công chúng, đồng thời cũng phải trở thành một diễn viên khiến các
-            biên kịch và đạo diễn luôn muốn tiếp tục hợp tác.
-          </p>
-
-          <p>
-            Vì vậy, thay vì nghĩ mình nhất định phải đóng một tác phẩm nào đó
-            hay phải giành được một giải thưởng nào đó, điều mình mong muốn hơn
-            cả là đến tận năm 80, 90 tuổi vẫn có thể sống với tư cách một diễn viên.
-          </p>
-
-        </div>
-
-      </section>
-
-
-      <section class="qa">
-
-        <h2 class="question">
-          Hiện tại bạn đang chuẩn bị cho thử thách nào tiếp theo?
-          Điều gì bạn đang chuẩn bị đối diện dù vẫn có chút sợ hãi nhưng
-          không hề chùn bước?
-        </h2>
-
-        <div class="answer">
-
-          <p>
-            Mình đang chuẩn bị cho một tác phẩm mới, nơi mình có thể cho mọi người
-            thấy một hình ảnh khác so với bộ phim đầu tiên.
-          </p>
-
-          <p>
-            Khi xem một tác phẩm hay, ngay cả khi đã về nhà hay sang đến ngày hôm sau,
-            người ta vẫn tiếp tục nghĩ về nó, đúng không?
-          </p>
-
-          <p>
-            Mình muốn tiếp tục thử thách bản thân để có thể trở thành một diễn viên
-            đủ sức để lại dư âm như thế.
-          </p>
-
-          <p>
-            Ngoài ra, mình cũng đang chuẩn bị cho một thử thách hoàn toàn mới mà
-            trước đây chưa từng làm.
-          </p>
-
-          <p>
-            Vì vậy, hy vọng lần tới khi gặp lại &lt;Marie Claire&gt;, mình sẽ
-            trưởng thành hơn và cũng bớt căng thẳng hơn một chút.
-          </p>
-
-        </div>
-
-      </section>
-
-
-      <section class="qa">
-
-        <h2 class="question">
-          Giữa vô số thử thách ấy, tôi có cảm giác và cả một chút linh cảm rằng
-          rồi chúng ta sẽ lại gặp nhau. Có lẽ ngày ấy sẽ đến sớm thôi nhỉ?
-        </h2>
-
-      </section>
-
-    </article>
-
-
-    <!-- ================================
-         CLOSING
-    ================================= -->
-
-    <section class="closing">
-
-      <div class="closing-inner">
-
-        <div class="small">
-          Marie Claire · Conversation
-        </div>
-
-        <h2>
-          “Nếu biết sẵn đáp án thì đâu còn thú vị nữa.”
-        </h2>
-
+    <section class="mag-section personal-section" id="goc-nhin-ca-nhan">
+      <header class="simple-head">
+        <div class="kicker">Fan Perspective</div>
+        <h2>Góc nhìn của người hâm mộ về Park Si Woo</h2>
+      </header>
+
+      <div class="personal-intro">
+        <blockquote class="fan-highlight"><em>“Chỉ khi một người thực sự có khả năng chủ động lựa chọn, họ mới không cần đóng đinh bản thân vào một thân phận duy nhất.”</em></blockquote>
+        <blockquote class="fan-highlight"><em>“Bởi trong lúc người khác còn đang do dự: “Làm như vậy có mất giá không?”, “Có phải nên đợi đối phương bắt đầu trước không?”, “Ai chủ động trước chẳng phải là người thua sao?” thì cậu ấy đã bắt đầu làm bước tiếp theo.”</em></blockquote>
+        <blockquote class="fan-highlight"><em>“Điều thực sự khiến người ta nhớ mãi chưa bao giờ là dáng vẻ cao ngạo được cố tình duy trì, mà là khi một người thực sự có quyền lựa chọn, họ vẫn dám là chính mình.”</em></blockquote>
       </div>
 
+      <article class="essay">
+<p><strong>Người có năng lực không câu nệ, người thông đạt không tự giới hạn</strong><strong> mình.</strong></p>
+<p>Mình luôn cảm thấy điều đáng quý nhất ở Siwoo là cậu ấy chưa bao giờ tự nhốt mình trong những khuôn mẫu cố định về việc bản thân “nên phải như thế nào”.</p>
+<p>Ở đây, mình muốn chia sẻ một câu mà mình rất thích:</p>
+<p><strong>“Người có năng lực không câu nệ, người thông đạt không tự giới hạn.”</strong></p>
+<p>Ý của câu này là: người thực sự có năng lực sẽ không tự trói mình vào một thân phận nhất định; còn người thực sự thông suốt cũng sẽ không giới hạn bản thân chỉ trong một con đường duy nhất.</p>
+<p>Câu này đặt vào Siwoo thực sự rất phù hợp</p>
+<p>Cậu ấy không phải kiểu người từ đầu đến cuối đều thuận buồm xuôi gió, ngay từ ban đầu đã tìm được đáp án chính xác. Cậu ấy từng trải qua những giai đoạn không thuận lợi, cũng từng đi qua những thân phận và những con đường khác nhau. Nhưng điều rất thú vị là dường như cậu ấy hiếm khi xem một lần thất bại nào đó như định nghĩa cuối cùng về bản thân.</p>
+<p>Nếu một con đường không đưa mình đến nơi đã dự tính, vậy thì đổi một cách khác để tiếp tục.</p>
+<p>Nếu một thân phận không thể chứa hết mọi khả năng của mình, vậy thì đi tìm một vị trí mới.</p>
+<p>Điều cậu ấy thực sự kiên trì, dường như chưa bao giờ là một thân phận cụ thể, mà là một việc:</p>
+<p><strong>“Mình phải tiếp tục tiến về phía trước.”</strong></p>
+<p>Vì vậy, mình không quá thích cách đơn giản hóa trải nghiệm của cậu ấy thành kiểu: “Trước đây làm idol không thành công, sau đó chuyển sang làm diễn viên rồi thành công.”</p>
+<p>Cách nói ấy quá dễ biến quá trình trưởng thành của một con người thành một kết quả đơn lẻ.</p>
+<p>Mình thích hiểu nó theo cách khác hơn:</p>
+<p><strong>Cậu ấy vẫn luôn tìm kiếm một vị trí phù hợp với mình hơn.</strong></p>
+<p>Không phải cậu ấy đột nhiên đổi sang một con đường khác, mà là cậu ấy không ngừng lựa chọn lại.</p>
+<p>Rất nhiều người khi đối diện với thất bại sẽ theo bản năng nghi ngờ chính mình:</p>
+<p>“Có phải mình chưa đủ giỏi không?”</p>
+<p>Nhưng đặt vào Siwoo, điều cậu ấy nghĩ dường như lại là:</p>
+<p><strong>“Nếu con đường này tạm thời chưa đi được, liệu còn con đường nào khác mình có thể thử hay không?”</strong></p>
+<p>Những trải nghiệm trong quá khứ không khiến cậu ấy dừng lại tại chỗ. Trái lại, cậu ấy vẫn luôn không ngừng thử những khả năng mới: từ thân phận idol dần chuyển sang diễn viên, rồi đến hiện tại có công ty của riêng mình và trực tiếp tham gia vào việc hoạch định sự nghiệp của bản thân.</p>
+<p>Thay đổi quan trọng nhất trong quá trình ấy thực ra chưa chắc chỉ đơn giản là “đổi đường đua”, mà là cách tư duy của cậu ấy đã chuyển từ:</p>
+<p><strong>“Liệu mình có thể được lựa chọn hay không?”</strong></p>
+<p>sang:</p>
+<p><strong>“Mình muốn lựa chọn điều gì?”</strong></p>
+<p>Nhìn bề ngoài, hai câu hỏi ấy chỉ khác nhau vài chữ, nhưng vị trí tâm lý phía sau lại hoàn toàn khác.</p>
+<p>Câu đầu tiên thiên về chờ đợi cơ hội.</p>
+<p>Câu sau có nghĩa là bắt đầu chủ động tìm kiếm và nắm lấy cơ hội.</p>
+<p>Chỉ khi một người thực sự có khả năng chủ động lựa chọn, họ mới không cần đóng đinh bản thân vào một thân phận duy nhất.</p>
+<p>Vì vậy, mình rất thích sự <strong>“không câu nệ”</strong> ở cậu ấy.</p>
+<p>Cậu ấy không vì trước đây đã đi qua một con đường mà quy định rằng sau này mình chỉ có thể tiếp tục đi đúng con đường đó.</p>
+<p>Cũng không vì có một vài giai đoạn trong quá khứ không đủ thuận lợi mà từ đó phủ nhận chính mình.</p>
+<p>Ngay cả khi hiện tại đã có một thân phận mới, cậu ấy cũng không vội vàng phủ định toàn bộ quá khứ.</p>
+<p>Đó thực ra là một cách tư duy rất trưởng thành.</p>
+<p>Những trải nghiệm của một đời người hiếm khi thực sự vô ích.</p>
+<p>Với Siwoo, những kinh nghiệm trên sân khấu trước đây, kinh nghiệm trước ống kính, khả năng biểu đạt trước công chúng, kinh nghiệm đối diện với những môi trường khác nhau, kể cả những quãng thời gian không thuận lợi sau này đều sẽ trở thành một phần trong con người cậu ấy.</p>
+<p>Vì vậy, cái gọi là “đổi đường đua” rất nhiều khi vốn không phải bắt đầu lại từ đầu.</p>
+<p>Mà là mang tất cả những gì đã tích lũy trong quá khứ đến một nơi mới, rồi sắp xếp và kết hợp chúng lại theo một cách khác.</p>
+<p>Những trải nghiệm trước đây không biến mất.</p>
+<p>Chúng chỉ trở thành <strong>nội lực của cậu ấy ở hiện tại</strong>.</p>
+<p>----</p>
+<p>Có lẽ ở Siwoo còn một điểm đặc biệt dễ bị người khác hiểu lầm:</p>
+<p><strong>Sự chủ động mà thỉnh thoảng chúng ta nhìn thấy ở cậu ấy.</strong></p>
+<p>Bộ phim đó giúp cậu ấy được nhiều người nhìn thấy hơn, đồng thời cũng mang tới cho cậu ấy sự chú ý và những cơ hội mới. Nhưng trong một số tương tác và hoạt động mang tính công việc về sau, mức độ chủ động của hai bên không phải lúc nào cũng hoàn toàn giống nhau.</p>
+<p>Đôi khi có thể nhận thấy rất rõ rằng cậu ấy là người chủ động lên tiếng, chủ động tặng quà, chủ động tương tác, chủ động duy trì một số việc vốn cần hai phía cùng hoàn thành.</p>
+<p>Vì vậy sẽ có người nghĩ: “Tại sao lúc nào cũng là cậu ấy chủ động?”</p>
+<p>“Tại sao cậu ấy nhất định phải đặt mình ở vị trí thấp như vậy?”</p>
+<p>Nhưng ở đây có một vấn đề rất dễ bị bỏ qua:</p>
+<p><strong>Chủ động chưa bao giờ đồng nghĩa với ở thế thấp.</strong></p>
+<p>Không biết từ khi nào, rất nhiều người đã quen hiểu chuyện “ai chủ động trước” như một mối quan hệ vị thế.</p>
+<p>Ai mở lời trước thì người đó thua.</p>
+<p>Ai bày tỏ trước thì người đó quan tâm nhiều hơn.</p>
+<p>Ai chủ động nhiều hơn thì dường như người đó đứng ở vị trí thấp hơn.</p>
+<p>Thế nên chỉ cần một người hơi chủ động hơn một chút, sẽ lập tức có người thay họ lo lắng:</p>
+<p>“Làm vậy có phải hạ giá mình quá không?”</p>
+<p>Nhưng mình nghĩ một người thực sự có bản lĩnh chưa chắc sẽ tính toán theo cách ấy.</p>
+<p>Có lẽ cậu ấy căn bản không dành tâm sức để nghĩ:</p>
+<p><strong>“Mình làm như vậy có khiến mình trông giống người cần đối phương hơn không?”</strong></p>
+<p>Điều cậu ấy thực sự suy nghĩ có thể là:</p>
+<p><strong>“Việc này có đáng để làm không?”</strong></p>
+<p>Nếu đáng, vậy thì làm.</p>
+<p>Đó chẳng phải cũng chính là điều cậu ấy vẫn luôn nói sao:</p>
+<p><strong>“Cứ làm trước rồi tính.”</strong></p>
+<p>Nếu sự chủ động có thể khiến mọi chuyện tiếp tục tiến về phía trước, có thể thúc đẩy nó tiến triển và mang lại nhiều kết quả hơn, vậy thì cứ chủ động.</p>
+<p>Nếu một lần bày tỏ có thể đổi lấy nhiều khả năng hơn, tại sao nhất định phải từ chối chỉ vì cái gọi là “giữ giá”?</p>
+<p>Đây chính là một đặc điểm tính cách rất hiếm thấy ở Siwoo.</p>
+<p>------</p>
+<p>Theo quan niệm truyền thống, “giữ giá” thường yêu cầu một người phải duy trì khoảng cách thích hợp.</p>
+<p>Càng có địa vị thì càng nên tỏ ra chừng mực.</p>
+<p>Càng nổi tiếng thì càng không được biểu hiện quá chủ động.</p>
+<p>Dường như một người chỉ có thể chứng minh vị trí của mình bằng cách mãi đứng yên ở đó, chờ người khác tìm đến.</p>
+<p>Nhưng mình không đồng tình với logic này.</p>
+<p>Bởi vì sự điềm tĩnh thực sự không phải là lúc nào cũng phải tỏ ra xa cách, mà là:</p>
+<p><strong>Mình biết mình là ai, vì vậy mình không cần dùng sự lạnh nhạt để chứng minh giá trị của bản thân.</strong></p>
+<p>Mình sẵn lòng chủ động không có nghĩa là mình thấp hơn người khác một bậc.</p>
+<p>Mình sẵn lòng bày tỏ không có nghĩa là mình cần ai đó hơn.</p>
+<p>Mình sẵn lòng trao đi thiện ý cũng không có nghĩa là mình đã đánh mất vị trí của mình.</p>
+<p>Nếu một người đủ nhìn rõ mục tiêu và giá trị của bản thân, ngược lại họ sẽ không quá ám ảnh với việc duy trì cái gọi là “tư thế”.</p>
+<p>Bởi điều họ quan tâm hơn là bản thân sự việc.</p>
+<p>“Tư thế” là thứ để người khác nhìn thấy, nhưng kết quả đạt được mới thực sự thuộc về mình.</p>
+<p>Có người nhìn thấy: <strong>“Tại sao cậu ấy lại chủ động nữa rồi?”</strong></p>
+<p>Còn điều mình nhìn thấy là: <strong>“Tại sao cậu ấy dám chủ động?”</strong></p>
+<p>Hai góc nhìn này thực ra hoàn toàn khác nhau.</p>
+<p>Chủ động đồng nghĩa với việc bạn phải chấp nhận trước một khả năng về mặt tâm lý:</p>
+<p>Đối phương có thể không đáp lại theo cách tương tự, thậm chí bạn có thể bị hiểu lầm.</p>
+<p>Có người sẽ cho rằng bạn đang “vồ vập”.</p>
+<p>Có người sẽ thắc mắc tại sao bạn không duy trì cái gọi là vị thế cao.</p>
+<p>Nhưng dù như vậy, cậu ấy vẫn sẵn lòng làm, bản thân sức hút ấy đã cần đến một loại dũng khí.</p>
+<p>Theo mình, một người chủ động chưa chắc đang đứng thấp hơn, có đôi khi chỉ đơn giản là vì họ nhìn xa hơn.</p>
+<p>Cậu ấy không xem “chủ động trước” là thua cuộc, cũng không xem “giữ khoảng cách” là biểu hiện của vị thế cao.</p>
+<p>Cậu ấy sẵn sàng vì kết quả mình mong muốn mà buông bỏ những gánh nặng tâm lý không cần thiết.</p>
+<p><strong>Không câu nệ thân phận.</strong></p>
+<p><strong>Không bị trói buộc bởi quy tắc.</strong></p>
+<p><strong>Thậm chí không bị nhốt trong những lối tư duy truyền thống ấy.</strong></p>
+<p><strong>Vậy tại sao sự chủ động của cậu ấy cuối cùng lại mang về nhiều tiếng vỗ tay và sự yêu mến hơn?</strong></p>
+<p>Bởi điều công chúng nhìn thấy không chỉ là một người đang làm rất nhiều việc tưởng chừng không cần thiết.</p>
+<p>Họ nhìn thấy một sức sống rất trực diện.</p>
+<p>Cậu ấy sẵn lòng bày tỏ, sẵn lòng hành động, sẵn lòng tranh thủ.</p>
+<p>Sẵn lòng chủ động gánh lấy mọi kết quả có thể xuất hiện sau đó.</p>
+<p>Thứ này thực ra rất khó giả vờ, cũng chính vì vậy mà rất nhiều khi điều thực sự khiến người khác có thiện cảm không phải cái gọi là vẻ “cao lãnh”, mà là một thái độ chân thành và thực tế:</p>
+<p><strong>“Mình biết mình đang làm gì.”</strong></p>
+<p>Cậu ấy có thể buông bỏ tư thế, nhưng không hạ thấp bản thân.</p>
+<p>Có thể chủ động, nhưng không đánh mất chừng mực và ranh giới.</p>
+<p>Có thể nhiệt tình, nhưng điều đó cũng không có nghĩa là đánh mất sự tôn nghiêm và khí chất.</p>
+<p>Thậm chí mình còn cảm thấy chính sự không câu nệ theo nghĩa truyền thống ấy lại mang tới cho cậu ấy nhiều khả năng hơn.</p>
+<p>Bởi trong lúc người khác còn đang do dự: “Làm như vậy có mất giá không?”, “Có phải nên đợi đối phương bắt đầu trước không?”, “Ai chủ động trước chẳng phải là người thua sao?” thì cậu ấy đã bắt đầu làm bước tiếp theo.</p>
+<p>Cậu ấy đặt bản thân sự việc lên trước sĩ diện, hoàn toàn là kiểu người coi trọng hành động và kết quả.</p>
+<p class="word-blank" aria-hidden="true">&nbsp;</p>
+<p>Vì vậy, khi nhìn lại, tại sao cậu ấy có đủ dũng khí để hết lần này đến lần khác đưa ra lựa chọn mới?</p>
+<p>Tại sao cậu ấy không bị quá khứ giữ chân?</p>
+<p>Tại sao khi đối diện với cơ hội mới, cậu ấy sẵn sàng chủ động nắm lấy?</p>
+<p>Tại sao dù có người không hiểu một vài hành động của mình, cậu ấy vẫn sẵn lòng làm theo phán đoán của chính mình?</p>
+<p>Logic sâu bên dưới thực ra vẫn luôn nhất quán:</p>
+<p><strong>Cậu ấy không quá phụ thuộc vào một con đường cố định, cũng không mang gánh nặng quá lớn từ một thân phận cụ thể.</strong></p>
+<p>Điều cậu ấy quan tâm hơn là: Việc này có đáng làm hay không? Con đường này có phù hợp với mình không? Cơ hội này có nên nắm lấy không? Bước tiếp theo còn có thể tiếp tục tiến về phía trước hay không?</p>
+<p>Chính vì vậy, cậu ấy có thể từ một thân phận bước sang một thân phận khác.</p>
+<p>Cũng có thể trong lúc người khác cho rằng “cậu nên giữ giá”, cậu ấy lại chọn chủ động hành động.</p>
+<p>Bởi cậu ấy chưa từng tự nhốt mình trong những đáp án mà người khác đã quy định sẵn.</p>
+<p>Vì vậy, thứ mình thực sự ngưỡng mộ ở Park Siwoo không chỉ là diễn viên Park Siwoo, mà còn là cách tư duy và năng lực hành động của cậu ấy.</p>
+<p>Cậu ấy từng trải qua những thời điểm không thuận lợi nhưng không vì thế mà phủ định bản thân. Cậu ấy từng đổi hướng nhưng không phủ nhận quá khứ.</p>
+<p>Sau khi có những cơ hội mới, cậu ấy cũng không vì cái gọi là “thân phận” mà từ chối chủ động. Điều cậu ấy làm trong suốt một thời gian dài thực ra vẫn luôn là cùng một việc:</p>
+<p><strong>Không ngừng bước về phía trước và cố gắng tìm kiếm những khả năng lớn hơn cho chính mình.</strong></p>
+<p>Và khi một người thực sự biết bản thân muốn gì, thường họ sẽ như vậy. Họ không cần dựa vào việc từ chối hay tỏ ra lạnh lùng để chứng minh bản thân. Cũng không cần dựa vào chuyện có chủ động hay không để chứng minh mình đang ở vị trí nào.</p>
+<p>Bởi trong lòng họ hiểu rất rõ: </p>
+<p>Chủ động không phải ở thế thấp.</p>
+<p>Nhiệt tình không phải hạ giá bản thân.</p>
+<p>Buông bỏ tư thế cũng không đồng nghĩa với việc hạ thấp chính mình.</p>
+<p>Cảm giác thực sự về vị thế cao chưa bao giờ là: “Chuyện gì mình cũng không làm, cứ để người khác đến tìm mình.”</p>
+<p>Mà là:</p>
+<p><strong>“Mình hoàn toàn có khả năng chủ động bước ra một bước, đồng thời cũng không lo người khác sẽ vì thế mà định nghĩa giá trị của mình.”</strong></p>
+<p>Cậu ấy không dừng lại chỉ vì thất bại, cũng không bắt đầu “giữ giá” chỉ vì thành công.</p>
+<p>Đó chính là Park Siwoo trong mắt mình.</p>
+<p>Mình nhìn cậu ấy ngày càng có khả năng tự quyết định bản thân muốn đi về đâu.</p>
+<p>Và những tiếng vỗ tay, những lời hoan hô có được nhờ sự chủ động ấy vừa hay chứng minh một điều:</p>
+<p><strong>Điều thực sự khiến người ta nhớ mãi chưa bao giờ là dáng vẻ cao ngạo được cố tình duy trì, mà là khi một người thực sự có quyền lựa chọn, họ vẫn dám là chính mình.</strong></p>
+<p>Đó cũng chính là một trong những điều khiến mình bị cậu ấy thu hút sâu sắc nhất:</p>
+<p>Cậu ấy không tự nhốt mình trong lối suy nghĩ cứng nhắc về việc <strong>“mình đáng lẽ phải trở thành kiểu người như thế nào”</strong>.</p>
+<p>Không bước trên một con đường chỉ vì người khác cho rằng <strong>“đó mới là con đường cậu ấy nên đi”</strong>.</p>
+<p>Ngược lại, cậu ấy luôn biết rõ hơn mình muốn trở thành người như thế nào.</p>
+<p>Và sẽ cứ thế kiên định bước tiếp, cho tới khi cuối cùng đạt được mục tiêu của chính mình.</p>
+<p class="word-blank" aria-hidden="true">&nbsp;</p>
+      </article>
     </section>
 
   </main>
 
-
-  <!-- ================================
-       FOOTER
-  ================================= -->
-
   <footer>
-
-    <div class="footer-main">
-
-      <div class="footer-logo">
-        Park<br>
-        Si Woo
-      </div>
-
-      <div class="footer-info">
-        <p>
-          Vietnamese editorial adaptation based on the supplied
-          Marie Claire interview text.
-        </p>
-
-        <p style="margin-top: 15px;">
-          Replace all placeholder image URLs with licensed or authorized
-          Park Si Woo photography before publication.
-        </p>
-      </div>
-
-    </div>
-
-    <div class="copyright">
-      Marie Claire · October 2026 · Park Si Woo
-    </div>
-
+    <span>Park Si Woo</span>
+    <span>Magazine Archive</span>
   </footer>
-
 </body>
 </html>
